@@ -1,0 +1,665 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ratings should correctly match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Ratings />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Ratings
+        </h2>,
+        <div
+          className="ratings-area"
+        >
+          <div
+            className="great-shot"
+          >
+            <button
+              onClick={[Function]}
+              value={3}
+            >
+              Great
+            </button>
+          </div>
+          <div
+            className="ok-shot"
+          >
+            <button
+              onClick={[Function]}
+              value={2}
+            >
+              Pull
+            </button>
+            <button
+              onClick={[Function]}
+              value={4}
+            >
+              Push
+            </button>
+          </div>
+          <div
+            className="bad-shot"
+          >
+            <button
+              onClick={[Function]}
+              value={1}
+            >
+              Hook
+            </button>
+            <button
+              onClick={[Function]}
+              value={6}
+            >
+              Duff
+            </button>
+            <button
+              onClick={[Function]}
+              value={5}
+            >
+              Slice
+            </button>
+          </div>
+        </div>,
+        <button
+          onClick={[Function]}
+        >
+          Back
+        </button>,
+      ],
+      "className": "ratings",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Ratings",
+        },
+        "ref": null,
+        "rendered": "Ratings",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="great-shot"
+            >
+              <button
+                onClick={[Function]}
+                value={3}
+              >
+                Great
+              </button>
+            </div>,
+            <div
+              className="ok-shot"
+            >
+              <button
+                onClick={[Function]}
+                value={2}
+              >
+                Pull
+              </button>
+              <button
+                onClick={[Function]}
+                value={4}
+              >
+                Push
+              </button>
+            </div>,
+            <div
+              className="bad-shot"
+            >
+              <button
+                onClick={[Function]}
+                value={1}
+              >
+                Hook
+              </button>
+              <button
+                onClick={[Function]}
+                value={6}
+              >
+                Duff
+              </button>
+              <button
+                onClick={[Function]}
+                value={5}
+              >
+                Slice
+              </button>
+            </div>,
+          ],
+          "className": "ratings-area",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                onClick={[Function]}
+                value={3}
+              >
+                Great
+              </button>,
+              "className": "great-shot",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Great",
+                "onClick": [Function],
+                "value": 3,
+              },
+              "ref": null,
+              "rendered": "Great",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button
+                  onClick={[Function]}
+                  value={2}
+                >
+                  Pull
+                </button>,
+                <button
+                  onClick={[Function]}
+                  value={4}
+                >
+                  Push
+                </button>,
+              ],
+              "className": "ok-shot",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Pull",
+                  "onClick": [Function],
+                  "value": 2,
+                },
+                "ref": null,
+                "rendered": "Pull",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Push",
+                  "onClick": [Function],
+                  "value": 4,
+                },
+                "ref": null,
+                "rendered": "Push",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button
+                  onClick={[Function]}
+                  value={1}
+                >
+                  Hook
+                </button>,
+                <button
+                  onClick={[Function]}
+                  value={6}
+                >
+                  Duff
+                </button>,
+                <button
+                  onClick={[Function]}
+                  value={5}
+                >
+                  Slice
+                </button>,
+              ],
+              "className": "bad-shot",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Hook",
+                  "onClick": [Function],
+                  "value": 1,
+                },
+                "ref": null,
+                "rendered": "Hook",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Duff",
+                  "onClick": [Function],
+                  "value": 6,
+                },
+                "ref": null,
+                "rendered": "Duff",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Slice",
+                  "onClick": [Function],
+                  "value": 5,
+                },
+                "ref": null,
+                "rendered": "Slice",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Back",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Back",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Ratings
+          </h2>,
+          <div
+            className="ratings-area"
+          >
+            <div
+              className="great-shot"
+            >
+              <button
+                onClick={[Function]}
+                value={3}
+              >
+                Great
+              </button>
+            </div>
+            <div
+              className="ok-shot"
+            >
+              <button
+                onClick={[Function]}
+                value={2}
+              >
+                Pull
+              </button>
+              <button
+                onClick={[Function]}
+                value={4}
+              >
+                Push
+              </button>
+            </div>
+            <div
+              className="bad-shot"
+            >
+              <button
+                onClick={[Function]}
+                value={1}
+              >
+                Hook
+              </button>
+              <button
+                onClick={[Function]}
+                value={6}
+              >
+                Duff
+              </button>
+              <button
+                onClick={[Function]}
+                value={5}
+              >
+                Slice
+              </button>
+            </div>
+          </div>,
+          <button
+            onClick={[Function]}
+          >
+            Back
+          </button>,
+        ],
+        "className": "ratings",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Ratings",
+          },
+          "ref": null,
+          "rendered": "Ratings",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="great-shot"
+              >
+                <button
+                  onClick={[Function]}
+                  value={3}
+                >
+                  Great
+                </button>
+              </div>,
+              <div
+                className="ok-shot"
+              >
+                <button
+                  onClick={[Function]}
+                  value={2}
+                >
+                  Pull
+                </button>
+                <button
+                  onClick={[Function]}
+                  value={4}
+                >
+                  Push
+                </button>
+              </div>,
+              <div
+                className="bad-shot"
+              >
+                <button
+                  onClick={[Function]}
+                  value={1}
+                >
+                  Hook
+                </button>
+                <button
+                  onClick={[Function]}
+                  value={6}
+                >
+                  Duff
+                </button>
+                <button
+                  onClick={[Function]}
+                  value={5}
+                >
+                  Slice
+                </button>
+              </div>,
+            ],
+            "className": "ratings-area",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  onClick={[Function]}
+                  value={3}
+                >
+                  Great
+                </button>,
+                "className": "great-shot",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Great",
+                  "onClick": [Function],
+                  "value": 3,
+                },
+                "ref": null,
+                "rendered": "Great",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    onClick={[Function]}
+                    value={2}
+                  >
+                    Pull
+                  </button>,
+                  <button
+                    onClick={[Function]}
+                    value={4}
+                  >
+                    Push
+                  </button>,
+                ],
+                "className": "ok-shot",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Pull",
+                    "onClick": [Function],
+                    "value": 2,
+                  },
+                  "ref": null,
+                  "rendered": "Pull",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Push",
+                    "onClick": [Function],
+                    "value": 4,
+                  },
+                  "ref": null,
+                  "rendered": "Push",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    onClick={[Function]}
+                    value={1}
+                  >
+                    Hook
+                  </button>,
+                  <button
+                    onClick={[Function]}
+                    value={6}
+                  >
+                    Duff
+                  </button>,
+                  <button
+                    onClick={[Function]}
+                    value={5}
+                  >
+                    Slice
+                  </button>,
+                ],
+                "className": "bad-shot",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Hook",
+                    "onClick": [Function],
+                    "value": 1,
+                  },
+                  "ref": null,
+                  "rendered": "Hook",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Duff",
+                    "onClick": [Function],
+                    "value": 6,
+                  },
+                  "ref": null,
+                  "rendered": "Duff",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Slice",
+                    "onClick": [Function],
+                    "value": 5,
+                  },
+                  "ref": null,
+                  "rendered": "Slice",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Back",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Back",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
