@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should correctly match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="club-btns"
+        >
+          <button
+            className="club-btn-active"
+            onClick={[Function]}
+            value="wedges"
+          >
+            wedges
+          </button>
+          <button
+            className="club-btn-active"
+            onClick={[Function]}
+            value="irons"
+          >
+            irons
+          </button>
+          <button
+            className="club-btn-active"
+            onClick={[Function]}
+            value="woods"
+          >
+            woods
+          </button>
+        </div>,
+        <button
+          className="take-shot-btn"
+          onClick={[Function]}
+        >
+          take shot
+        </button>,
+      ],
+      "className": "home",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="club-btn-active"
+              onClick={[Function]}
+              value="wedges"
+            >
+              wedges
+            </button>,
+            <button
+              className="club-btn-active"
+              onClick={[Function]}
+              value="irons"
+            >
+              irons
+            </button>,
+            <button
+              className="club-btn-active"
+              onClick={[Function]}
+              value="woods"
+            >
+              woods
+            </button>,
+          ],
+          "className": "club-btns",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "wedges",
+            "nodeType": "host",
+            "props": Object {
+              "children": "wedges",
+              "className": "club-btn-active",
+              "onClick": [Function],
+              "value": "wedges",
+            },
+            "ref": null,
+            "rendered": "wedges",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": "irons",
+            "nodeType": "host",
+            "props": Object {
+              "children": "irons",
+              "className": "club-btn-active",
+              "onClick": [Function],
+              "value": "irons",
+            },
+            "ref": null,
+            "rendered": "irons",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": "woods",
+            "nodeType": "host",
+            "props": Object {
+              "children": "woods",
+              "className": "club-btn-active",
+              "onClick": [Function],
+              "value": "woods",
+            },
+            "ref": null,
+            "rendered": "woods",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "take shot",
+          "className": "take-shot-btn",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "take shot",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="club-btns"
+          >
+            <button
+              className="club-btn-active"
+              onClick={[Function]}
+              value="wedges"
+            >
+              wedges
+            </button>
+            <button
+              className="club-btn-active"
+              onClick={[Function]}
+              value="irons"
+            >
+              irons
+            </button>
+            <button
+              className="club-btn-active"
+              onClick={[Function]}
+              value="woods"
+            >
+              woods
+            </button>
+          </div>,
+          <button
+            className="take-shot-btn"
+            onClick={[Function]}
+          >
+            take shot
+          </button>,
+        ],
+        "className": "home",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="club-btn-active"
+                onClick={[Function]}
+                value="wedges"
+              >
+                wedges
+              </button>,
+              <button
+                className="club-btn-active"
+                onClick={[Function]}
+                value="irons"
+              >
+                irons
+              </button>,
+              <button
+                className="club-btn-active"
+                onClick={[Function]}
+                value="woods"
+              >
+                woods
+              </button>,
+            ],
+            "className": "club-btns",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "wedges",
+              "nodeType": "host",
+              "props": Object {
+                "children": "wedges",
+                "className": "club-btn-active",
+                "onClick": [Function],
+                "value": "wedges",
+              },
+              "ref": null,
+              "rendered": "wedges",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": "irons",
+              "nodeType": "host",
+              "props": Object {
+                "children": "irons",
+                "className": "club-btn-active",
+                "onClick": [Function],
+                "value": "irons",
+              },
+              "ref": null,
+              "rendered": "irons",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": "woods",
+              "nodeType": "host",
+              "props": Object {
+                "children": "woods",
+                "className": "club-btn-active",
+                "onClick": [Function],
+                "value": "woods",
+              },
+              "ref": null,
+              "rendered": "woods",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "take shot",
+            "className": "take-shot-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "take shot",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
