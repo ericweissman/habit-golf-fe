@@ -20,7 +20,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h2>
-          Ratings
+          rate your shot
         </h2>,
         <div
           className="ratings-area"
@@ -32,7 +32,7 @@ ShallowWrapper {
               onClick={[Function]}
               value={3}
             >
-              Great
+              great
             </button>
           </div>
           <div
@@ -42,13 +42,13 @@ ShallowWrapper {
               onClick={[Function]}
               value={2}
             >
-              Pull
+              pull
             </button>
             <button
               onClick={[Function]}
               value={4}
             >
-              Push
+              push
             </button>
           </div>
           <div
@@ -58,27 +58,167 @@ ShallowWrapper {
               onClick={[Function]}
               value={1}
             >
-              Hook
+              hook
             </button>
             <button
               onClick={[Function]}
               value={6}
             >
-              Duff
+              duff
             </button>
             <button
               onClick={[Function]}
               value={5}
             >
-              Slice
+              slice
             </button>
           </div>
         </div>,
-        <button
-          onClick={[Function]}
+        <Mutation
+          mutation={
+            Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": undefined,
+                  "operation": "mutation",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "clubId",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "clubId",
+                              },
+                            },
+                          },
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "rating",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "rating",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "createShot",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "rating",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "clubId",
+                              },
+                              "selectionSet": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "Int",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "clubId",
+                        },
+                      },
+                    },
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "Int",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "rating",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 147,
+                "start": 0,
+              },
+            }
+          }
+          onCompleted={[Function]}
+          variables={
+            Object {
+              "clubId": 0,
+              "rating": 3,
+            }
+          }
         >
-          Back
-        </button>,
+          [Function]
+        </Mutation>,
       ],
       "className": "ratings",
     },
@@ -89,10 +229,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Ratings",
+          "children": "rate your shot",
         },
         "ref": null,
-        "rendered": "Ratings",
+        "rendered": "rate your shot",
         "type": "h2",
       },
       Object {
@@ -108,7 +248,7 @@ ShallowWrapper {
                 onClick={[Function]}
                 value={3}
               >
-                Great
+                great
               </button>
             </div>,
             <div
@@ -118,13 +258,13 @@ ShallowWrapper {
                 onClick={[Function]}
                 value={2}
               >
-                Pull
+                pull
               </button>
               <button
                 onClick={[Function]}
                 value={4}
               >
-                Push
+                push
               </button>
             </div>,
             <div
@@ -134,19 +274,19 @@ ShallowWrapper {
                 onClick={[Function]}
                 value={1}
               >
-                Hook
+                hook
               </button>
               <button
                 onClick={[Function]}
                 value={6}
               >
-                Duff
+                duff
               </button>
               <button
                 onClick={[Function]}
                 value={5}
               >
-                Slice
+                slice
               </button>
             </div>,
           ],
@@ -163,7 +303,7 @@ ShallowWrapper {
                 onClick={[Function]}
                 value={3}
               >
-                Great
+                great
               </button>,
               "className": "great-shot",
             },
@@ -173,12 +313,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Great",
+                "children": "great",
                 "onClick": [Function],
                 "value": 3,
               },
               "ref": null,
-              "rendered": "Great",
+              "rendered": "great",
               "type": "button",
             },
             "type": "div",
@@ -193,13 +333,13 @@ ShallowWrapper {
                   onClick={[Function]}
                   value={2}
                 >
-                  Pull
+                  pull
                 </button>,
                 <button
                   onClick={[Function]}
                   value={4}
                 >
-                  Push
+                  push
                 </button>,
               ],
               "className": "ok-shot",
@@ -211,12 +351,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Pull",
+                  "children": "pull",
                   "onClick": [Function],
                   "value": 2,
                 },
                 "ref": null,
-                "rendered": "Pull",
+                "rendered": "pull",
                 "type": "button",
               },
               Object {
@@ -224,12 +364,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Push",
+                  "children": "push",
                   "onClick": [Function],
                   "value": 4,
                 },
                 "ref": null,
-                "rendered": "Push",
+                "rendered": "push",
                 "type": "button",
               },
             ],
@@ -245,19 +385,19 @@ ShallowWrapper {
                   onClick={[Function]}
                   value={1}
                 >
-                  Hook
+                  hook
                 </button>,
                 <button
                   onClick={[Function]}
                   value={6}
                 >
-                  Duff
+                  duff
                 </button>,
                 <button
                   onClick={[Function]}
                   value={5}
                 >
-                  Slice
+                  slice
                 </button>,
               ],
               "className": "bad-shot",
@@ -269,12 +409,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Hook",
+                  "children": "hook",
                   "onClick": [Function],
                   "value": 1,
                 },
                 "ref": null,
-                "rendered": "Hook",
+                "rendered": "hook",
                 "type": "button",
               },
               Object {
@@ -282,12 +422,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Duff",
+                  "children": "duff",
                   "onClick": [Function],
                   "value": 6,
                 },
                 "ref": null,
-                "rendered": "Duff",
+                "rendered": "duff",
                 "type": "button",
               },
               Object {
@@ -295,12 +435,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Slice",
+                  "children": "slice",
                   "onClick": [Function],
                   "value": 5,
                 },
                 "ref": null,
-                "rendered": "Slice",
+                "rendered": "slice",
                 "type": "button",
               },
             ],
@@ -312,14 +452,150 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": "Back",
-          "onClick": [Function],
+          "children": [Function],
+          "mutation": Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": undefined,
+                "operation": "mutation",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "clubId",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "clubId",
+                            },
+                          },
+                        },
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "rating",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "rating",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "createShot",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "rating",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "clubId",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "directives": Array [],
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "Int",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "clubId",
+                      },
+                    },
+                  },
+                  Object {
+                    "defaultValue": undefined,
+                    "directives": Array [],
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "Int",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "rating",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 147,
+              "start": 0,
+            },
+          },
+          "onCompleted": [Function],
+          "variables": Object {
+            "clubId": 0,
+            "rating": 3,
+          },
         },
         "ref": null,
-        "rendered": "Back",
-        "type": "button",
+        "rendered": [Function],
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -332,7 +608,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            Ratings
+            rate your shot
           </h2>,
           <div
             className="ratings-area"
@@ -344,7 +620,7 @@ ShallowWrapper {
                 onClick={[Function]}
                 value={3}
               >
-                Great
+                great
               </button>
             </div>
             <div
@@ -354,13 +630,13 @@ ShallowWrapper {
                 onClick={[Function]}
                 value={2}
               >
-                Pull
+                pull
               </button>
               <button
                 onClick={[Function]}
                 value={4}
               >
-                Push
+                push
               </button>
             </div>
             <div
@@ -370,27 +646,167 @@ ShallowWrapper {
                 onClick={[Function]}
                 value={1}
               >
-                Hook
+                hook
               </button>
               <button
                 onClick={[Function]}
                 value={6}
               >
-                Duff
+                duff
               </button>
               <button
                 onClick={[Function]}
                 value={5}
               >
-                Slice
+                slice
               </button>
             </div>
           </div>,
-          <button
-            onClick={[Function]}
+          <Mutation
+            mutation={
+              Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": undefined,
+                    "operation": "mutation",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "clubId",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "clubId",
+                                },
+                              },
+                            },
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "rating",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "rating",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "createShot",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "rating",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "clubId",
+                                },
+                                "selectionSet": undefined,
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "Int",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "clubId",
+                          },
+                        },
+                      },
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "Int",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "rating",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 147,
+                  "start": 0,
+                },
+              }
+            }
+            onCompleted={[Function]}
+            variables={
+              Object {
+                "clubId": 0,
+                "rating": 3,
+              }
+            }
           >
-            Back
-          </button>,
+            [Function]
+          </Mutation>,
         ],
         "className": "ratings",
       },
@@ -401,10 +817,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Ratings",
+            "children": "rate your shot",
           },
           "ref": null,
-          "rendered": "Ratings",
+          "rendered": "rate your shot",
           "type": "h2",
         },
         Object {
@@ -420,7 +836,7 @@ ShallowWrapper {
                   onClick={[Function]}
                   value={3}
                 >
-                  Great
+                  great
                 </button>
               </div>,
               <div
@@ -430,13 +846,13 @@ ShallowWrapper {
                   onClick={[Function]}
                   value={2}
                 >
-                  Pull
+                  pull
                 </button>
                 <button
                   onClick={[Function]}
                   value={4}
                 >
-                  Push
+                  push
                 </button>
               </div>,
               <div
@@ -446,19 +862,19 @@ ShallowWrapper {
                   onClick={[Function]}
                   value={1}
                 >
-                  Hook
+                  hook
                 </button>
                 <button
                   onClick={[Function]}
                   value={6}
                 >
-                  Duff
+                  duff
                 </button>
                 <button
                   onClick={[Function]}
                   value={5}
                 >
-                  Slice
+                  slice
                 </button>
               </div>,
             ],
@@ -475,7 +891,7 @@ ShallowWrapper {
                   onClick={[Function]}
                   value={3}
                 >
-                  Great
+                  great
                 </button>,
                 "className": "great-shot",
               },
@@ -485,12 +901,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Great",
+                  "children": "great",
                   "onClick": [Function],
                   "value": 3,
                 },
                 "ref": null,
-                "rendered": "Great",
+                "rendered": "great",
                 "type": "button",
               },
               "type": "div",
@@ -505,13 +921,13 @@ ShallowWrapper {
                     onClick={[Function]}
                     value={2}
                   >
-                    Pull
+                    pull
                   </button>,
                   <button
                     onClick={[Function]}
                     value={4}
                   >
-                    Push
+                    push
                   </button>,
                 ],
                 "className": "ok-shot",
@@ -523,12 +939,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Pull",
+                    "children": "pull",
                     "onClick": [Function],
                     "value": 2,
                   },
                   "ref": null,
-                  "rendered": "Pull",
+                  "rendered": "pull",
                   "type": "button",
                 },
                 Object {
@@ -536,12 +952,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Push",
+                    "children": "push",
                     "onClick": [Function],
                     "value": 4,
                   },
                   "ref": null,
-                  "rendered": "Push",
+                  "rendered": "push",
                   "type": "button",
                 },
               ],
@@ -557,19 +973,19 @@ ShallowWrapper {
                     onClick={[Function]}
                     value={1}
                   >
-                    Hook
+                    hook
                   </button>,
                   <button
                     onClick={[Function]}
                     value={6}
                   >
-                    Duff
+                    duff
                   </button>,
                   <button
                     onClick={[Function]}
                     value={5}
                   >
-                    Slice
+                    slice
                   </button>,
                 ],
                 "className": "bad-shot",
@@ -581,12 +997,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Hook",
+                    "children": "hook",
                     "onClick": [Function],
                     "value": 1,
                   },
                   "ref": null,
-                  "rendered": "Hook",
+                  "rendered": "hook",
                   "type": "button",
                 },
                 Object {
@@ -594,12 +1010,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Duff",
+                    "children": "duff",
                     "onClick": [Function],
                     "value": 6,
                   },
                   "ref": null,
-                  "rendered": "Duff",
+                  "rendered": "duff",
                   "type": "button",
                 },
                 Object {
@@ -607,12 +1023,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Slice",
+                    "children": "slice",
                     "onClick": [Function],
                     "value": 5,
                   },
                   "ref": null,
-                  "rendered": "Slice",
+                  "rendered": "slice",
                   "type": "button",
                 },
               ],
@@ -624,14 +1040,150 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": "Back",
-            "onClick": [Function],
+            "children": [Function],
+            "mutation": Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": undefined,
+                  "operation": "mutation",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "clubId",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "clubId",
+                              },
+                            },
+                          },
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "rating",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "rating",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "createShot",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "rating",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "clubId",
+                              },
+                              "selectionSet": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "Int",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "clubId",
+                        },
+                      },
+                    },
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "Int",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "rating",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 147,
+                "start": 0,
+              },
+            },
+            "onCompleted": [Function],
+            "variables": Object {
+              "clubId": 0,
+              "rating": 3,
+            },
           },
           "ref": null,
-          "rendered": "Back",
-          "type": "button",
+          "rendered": [Function],
+          "type": [Function],
         },
       ],
       "type": "div",
