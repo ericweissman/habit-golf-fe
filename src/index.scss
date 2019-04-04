@@ -1,3 +1,4 @@
+@import '/variables';
 @import './components/App/App';
 @import './components/Login/Login';
 @import './components/NewUser/NewUser';
@@ -6,9 +7,9 @@
 @import './components/Stats/Stats';
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $primary-font;
 }
