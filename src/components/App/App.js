@@ -13,20 +13,35 @@ import gql from 'graphql-tag'
 class App extends Component {
   state = {
     user: [1],
-    filter: 'home'
+    filter: 'home',
+    club: 'wedges',
+  }
+
+  componentDidMount() {
+    this.chooseRandomClub()
+  }
+  
+  chooseRandomClub = () => {
+    const clubs = ['wedges', 'irons', 'woods']
+    const randomClub = clubs[Math.floor(Math.random() * clubs.length)]
+    this.setState({club: randomClub})
   }
 
   changeFilter = (filter) => {
-    this.setState({ filter })
+    this.setState({ filter }, this.chooseRandomClub())
+  }
+
+  changeClub = (club) => {
+    this.setState({club})
   }
 
   componentToDisplay = () => {
-    const { filter } = this.state
+    const { filter, club } = this.state
     switch (filter) {
       case 'ratings':
-        return <Ratings changeFilter={this.changeFilter} />
+        return <Ratings changeFilter={this.changeFilter} club={club}/>
       default:
-        return <Home changeFilter={this.changeFilter} />
+        return <Home changeFilter={this.changeFilter} club={club} changeClub={this.changeClub} />
     }
   }
 

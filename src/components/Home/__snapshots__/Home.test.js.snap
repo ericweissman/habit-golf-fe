@@ -23,32 +23,35 @@ ShallowWrapper {
           className="club-btns"
         >
           <button
-            className="club-btn-active"
+            className="club-btn"
             onClick={[Function]}
             value="wedges"
           >
             wedges
           </button>
           <button
-            className="club-btn-active"
+            className="club-btn"
             onClick={[Function]}
             value="irons"
           >
             irons
           </button>
           <button
-            className="club-btn-active"
+            className="club-btn"
             onClick={[Function]}
             value="woods"
           >
             woods
           </button>
         </div>,
+        <div
+          className="feedback"
+        />,
         <button
           className="take-shot-btn"
           onClick={[Function]}
         >
-          take shot
+          Press After Your Shot
         </button>,
       ],
       "className": "home",
@@ -62,21 +65,21 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <button
-              className="club-btn-active"
+              className="club-btn"
               onClick={[Function]}
               value="wedges"
             >
               wedges
             </button>,
             <button
-              className="club-btn-active"
+              className="club-btn"
               onClick={[Function]}
               value="irons"
             >
               irons
             </button>,
             <button
-              className="club-btn-active"
+              className="club-btn"
               onClick={[Function]}
               value="woods"
             >
@@ -93,7 +96,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "wedges",
-              "className": "club-btn-active",
+              "className": "club-btn",
               "onClick": [Function],
               "value": "wedges",
             },
@@ -107,7 +110,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "irons",
-              "className": "club-btn-active",
+              "className": "club-btn",
               "onClick": [Function],
               "value": "irons",
             },
@@ -121,7 +124,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "woods",
-              "className": "club-btn-active",
+              "className": "club-btn",
               "onClick": [Function],
               "value": "woods",
             },
@@ -137,12 +140,23 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "take shot",
+          "className": "feedback",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Press After Your Shot",
           "className": "take-shot-btn",
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "take shot",
+        "rendered": "Press After Your Shot",
         "type": "button",
       },
     ],
@@ -159,32 +173,35 @@ ShallowWrapper {
             className="club-btns"
           >
             <button
-              className="club-btn-active"
+              className="club-btn"
               onClick={[Function]}
               value="wedges"
             >
               wedges
             </button>
             <button
-              className="club-btn-active"
+              className="club-btn"
               onClick={[Function]}
               value="irons"
             >
               irons
             </button>
             <button
-              className="club-btn-active"
+              className="club-btn"
               onClick={[Function]}
               value="woods"
             >
               woods
             </button>
           </div>,
+          <div
+            className="feedback"
+          />,
           <button
             className="take-shot-btn"
             onClick={[Function]}
           >
-            take shot
+            Press After Your Shot
           </button>,
         ],
         "className": "home",
@@ -198,21 +215,21 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <button
-                className="club-btn-active"
+                className="club-btn"
                 onClick={[Function]}
                 value="wedges"
               >
                 wedges
               </button>,
               <button
-                className="club-btn-active"
+                className="club-btn"
                 onClick={[Function]}
                 value="irons"
               >
                 irons
               </button>,
               <button
-                className="club-btn-active"
+                className="club-btn"
                 onClick={[Function]}
                 value="woods"
               >
@@ -229,7 +246,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "wedges",
-                "className": "club-btn-active",
+                "className": "club-btn",
                 "onClick": [Function],
                 "value": "wedges",
               },
@@ -243,7 +260,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "irons",
-                "className": "club-btn-active",
+                "className": "club-btn",
                 "onClick": [Function],
                 "value": "irons",
               },
@@ -257,7 +274,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "woods",
-                "className": "club-btn-active",
+                "className": "club-btn",
                 "onClick": [Function],
                 "value": "woods",
               },
@@ -273,12 +290,23 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "take shot",
+            "className": "feedback",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Press After Your Shot",
             "className": "take-shot-btn",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "take shot",
+          "rendered": "Press After Your Shot",
           "type": "button",
         },
       ],

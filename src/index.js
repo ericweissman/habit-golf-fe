@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import { ApolloProvider } from 'react-apollo';
 
 const client = new ApolloClient({
-  uri: "https://habit-golf-api.herokuapp.com/"
+  uri: "https://habit-golf-api.herokuapp.com/graphql"
 })
 
 
