@@ -1,0 +1,41 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  align-items: center;
+}
+
+.take-shot-btn {
+  width: 240px;
+  height: 60px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0 10px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.feedback {
+  height: 275px;
+}
+
+.club-btns {
+  height: 40px;
+  background-color: #fff;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  button {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .club-btn-active {
+    color: $green-accent;
+    font-weight: 700;
+  }
+}
+
