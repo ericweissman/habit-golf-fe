@@ -7,14 +7,14 @@ import Home from '../Home/Home'
 import './App.scss';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag'
-
-
+import { connect } from 'react-redux';
+import { setActiveClub } from '../../actions'
 
 class App extends Component {
   state = {
     user: [1],
     filter: 'home',
-    club: 'wedges',
+    // club: 'wedges',
   }
 
   componentDidMount() {
@@ -24,7 +24,7 @@ class App extends Component {
   chooseRandomClub = () => {
     const clubs = ['wedges', 'irons', 'woods']
     const randomClub = clubs[Math.floor(Math.random() * clubs.length)]
-    this.setState({club: randomClub})
+    this.props.setActiveClub(randomClub)
   }
 
   changeFilter = (filter) => {
@@ -32,11 +32,12 @@ class App extends Component {
   }
 
   changeClub = (club) => {
-    this.setState({club})
+    this.props.setActiveClub(club)
   }
 
   componentToDisplay = () => {
-    const { filter, club } = this.state
+    const { filter } = this.state
+    const { club } = this.props
     switch (filter) {
       case 'ratings':
         return <Ratings changeFilter={this.changeFilter} club={club}/>
@@ -58,4 +59,15 @@ class App extends Component {
   }
 }
 
-export default App;
+export const mapStateToProps = (state) => ({
+  isLoading: state.isLoading,
+  error: state.error,
+  club: state.club,
+});
+
+
+export const mapDispatchToProps = (dispatch) => ({
+  setActiveClub: (club) => dispatch(setActiveClub(club))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
