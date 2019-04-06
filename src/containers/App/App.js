@@ -10,17 +10,16 @@ import gql from 'graphql-tag'
 import { connect } from 'react-redux';
 import { setActiveClub } from '../../actions'
 
-class App extends Component {
+export class App extends Component {
   state = {
     user: [1],
     filter: 'home',
-    // club: 'wedges',
   }
 
   componentDidMount() {
     this.chooseRandomClub()
   }
-  
+
   chooseRandomClub = () => {
     const clubs = ['wedges', 'irons', 'woods']
     const randomClub = clubs[Math.floor(Math.random() * clubs.length)]
@@ -28,7 +27,7 @@ class App extends Component {
   }
 
   changeFilter = (filter) => {
-    this.setState({ filter }, this.chooseRandomClub())
+    this.setState({ filter })
   }
 
   changeClub = (club) => {
@@ -40,7 +39,9 @@ class App extends Component {
     const { club } = this.props
     switch (filter) {
       case 'ratings':
-        return <Ratings changeFilter={this.changeFilter} club={club}/>
+        return <Ratings changeFilter={this.changeFilter} club={club} random={this.chooseRandomClub} />
+      case 'stats':
+        return <Stats changeFilter={this.changeFilter}/>
       default:
         return <Home changeFilter={this.changeFilter} club={club} changeClub={this.changeClub} />
     }

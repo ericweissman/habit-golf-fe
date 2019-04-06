@@ -6,9 +6,10 @@
 }
 
 .take-shot-btn {
-  width: 240px;
+  width: 165px;
   height: 60px;
-  background-color: #fff;
+  background-color: $masters-green;
+  color: $masters-yellow;
   font-size: 20px;
   font-weight: 200;
   padding: 0 10px;
@@ -19,7 +20,7 @@
 
 .club-btns {
   height: 40px;
-  background-color: #fff;
+  background-color: $masters-green;
   width: 300px;
   display: flex;
   justify-content: space-around;
@@ -28,10 +29,18 @@
   button {
     font-size: 18px;
     font-weight: 200;
+    color: white;
   }
   .club-btn-active {
-    color: $green-accent;
+    color: $masters-yellow;
     font-weight: 700;
   }
 }
 
+.view-stats {
+  @extend .take-shot-btn;
+  width: 115px;
+  font-size: 16px;
+  height: 40px;
+  margin-top: 20px;
+}

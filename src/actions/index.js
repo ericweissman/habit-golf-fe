@@ -22,3 +22,8 @@ export const setLastShot = (shot) => ({
   type: 'SET_LAST_SHOT',
   shot
 })
+
+export const getDataSuccess = (data) => ({
+  type: 'GET_DATA_SUCCESS',
+  data
+})

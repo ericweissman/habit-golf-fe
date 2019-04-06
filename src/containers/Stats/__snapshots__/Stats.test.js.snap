@@ -3,7 +3,7 @@
 exports[`Stats should correctly match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Stats />,
+  Symbol(enzyme.__unrendered__): <Connect(Stats) />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -16,447 +16,59 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <div
-          className="date-btns"
-        >
-          <button
-            onClick={[Function]}
-            value="today"
-          >
-            today
-          </button>
-          <button
-            onClick={[Function]}
-            value="all time"
-          >
-            all time
-          </button>
-        </div>,
-        <div
-          className="graph-area"
-        >
-          <ReactMinimalPieChart
-            animate={false}
-            animationDuration={500}
-            animationEasing="ease-out"
-            className="graph"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "#E38627",
-                  "title": "One",
-                  "value": 1.1,
-                },
-                Object {
-                  "color": "#C13C37",
-                  "title": "Two",
-                  "value": 1.9,
-                },
-                Object {
-                  "color": "#6A2135",
-                  "title": "Three",
-                  "value": 20,
-                },
-              ]
-            }
-            label={false}
-            labelPosition={50}
-            lengthAngle={360}
-            lineWidth={100}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={false}
-            startAngle={0}
-          />
-        </div>,
-        <button />,
-      ],
+      "children": [Function],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <button
-              onClick={[Function]}
-              value="today"
-            >
-              today
-            </button>,
-            <button
-              onClick={[Function]}
-              value="all time"
-            >
-              all time
-            </button>,
-          ],
-          "className": "date-btns",
+    "rendered": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.context),
+      "_calculateChangedBits": null,
+      "_context": Object {
+        "$$typeof": Symbol(react.context),
+        "Consumer": [Circular],
+        "Provider": Object {
+          "$$typeof": Symbol(react.provider),
+          "_context": [Circular],
         },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "today",
-              "onClick": [Function],
-              "value": "today",
-            },
-            "ref": null,
-            "rendered": "today",
-            "type": "button",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "all time",
-              "onClick": [Function],
-              "value": "all time",
-            },
-            "ref": null,
-            "rendered": "all time",
-            "type": "button",
-          },
-        ],
-        "type": "div",
+        "_calculateChangedBits": null,
+        "_currentRenderer": null,
+        "_currentRenderer2": null,
+        "_currentValue": null,
+        "_currentValue2": null,
+        "_threadCount": 0,
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <ReactMinimalPieChart
-            animate={false}
-            animationDuration={500}
-            animationEasing="ease-out"
-            className="graph"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "#E38627",
-                  "title": "One",
-                  "value": 1.1,
-                },
-                Object {
-                  "color": "#C13C37",
-                  "title": "Two",
-                  "value": 1.9,
-                },
-                Object {
-                  "color": "#6A2135",
-                  "title": "Three",
-                  "value": 20,
-                },
-              ]
-            }
-            label={false}
-            labelPosition={50}
-            lengthAngle={360}
-            lineWidth={100}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={false}
-            startAngle={0}
-          />,
-          "className": "graph-area",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "animate": false,
-            "animationDuration": 500,
-            "animationEasing": "ease-out",
-            "className": "graph",
-            "cx": 50,
-            "cy": 50,
-            "data": Array [
-              Object {
-                "color": "#E38627",
-                "title": "One",
-                "value": 1.1,
-              },
-              Object {
-                "color": "#C13C37",
-                "title": "Two",
-                "value": 1.9,
-              },
-              Object {
-                "color": "#6A2135",
-                "title": "Three",
-                "value": 20,
-              },
-            ],
-            "label": false,
-            "labelPosition": 50,
-            "lengthAngle": 360,
-            "lineWidth": 100,
-            "onClick": undefined,
-            "onMouseOut": undefined,
-            "onMouseOver": undefined,
-            "paddingAngle": 0,
-            "radius": 50,
-            "ratio": 1,
-            "rounded": false,
-            "startAngle": 0,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": "button",
-      },
-    ],
-    "type": "div",
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <div
-            className="date-btns"
-          >
-            <button
-              onClick={[Function]}
-              value="today"
-            >
-              today
-            </button>
-            <button
-              onClick={[Function]}
-              value="all time"
-            >
-              all time
-            </button>
-          </div>,
-          <div
-            className="graph-area"
-          >
-            <ReactMinimalPieChart
-              animate={false}
-              animationDuration={500}
-              animationEasing="ease-out"
-              className="graph"
-              cx={50}
-              cy={50}
-              data={
-                Array [
-                  Object {
-                    "color": "#E38627",
-                    "title": "One",
-                    "value": 1.1,
-                  },
-                  Object {
-                    "color": "#C13C37",
-                    "title": "Two",
-                    "value": 1.9,
-                  },
-                  Object {
-                    "color": "#6A2135",
-                    "title": "Three",
-                    "value": 20,
-                  },
-                ]
-              }
-              label={false}
-              labelPosition={50}
-              lengthAngle={360}
-              lineWidth={100}
-              paddingAngle={0}
-              radius={50}
-              ratio={1}
-              rounded={false}
-              startAngle={0}
-            />
-          </div>,
-          <button />,
-        ],
+        "children": [Function],
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <button
-                onClick={[Function]}
-                value="today"
-              >
-                today
-              </button>,
-              <button
-                onClick={[Function]}
-                value="all time"
-              >
-                all time
-              </button>,
-            ],
-            "className": "date-btns",
+      "rendered": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.context),
+        "_calculateChangedBits": null,
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": [Circular],
+          "Provider": Object {
+            "$$typeof": Symbol(react.provider),
+            "_context": [Circular],
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "today",
-                "onClick": [Function],
-                "value": "today",
-              },
-              "ref": null,
-              "rendered": "today",
-              "type": "button",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "all time",
-                "onClick": [Function],
-                "value": "all time",
-              },
-              "ref": null,
-              "rendered": "all time",
-              "type": "button",
-            },
-          ],
-          "type": "div",
+          "_calculateChangedBits": null,
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": null,
+          "_currentValue2": null,
+          "_threadCount": 0,
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <ReactMinimalPieChart
-              animate={false}
-              animationDuration={500}
-              animationEasing="ease-out"
-              className="graph"
-              cx={50}
-              cy={50}
-              data={
-                Array [
-                  Object {
-                    "color": "#E38627",
-                    "title": "One",
-                    "value": 1.1,
-                  },
-                  Object {
-                    "color": "#C13C37",
-                    "title": "Two",
-                    "value": 1.9,
-                  },
-                  Object {
-                    "color": "#6A2135",
-                    "title": "Three",
-                    "value": 20,
-                  },
-                ]
-              }
-              label={false}
-              labelPosition={50}
-              lengthAngle={360}
-              lineWidth={100}
-              paddingAngle={0}
-              radius={50}
-              ratio={1}
-              rounded={false}
-              startAngle={0}
-            />,
-            "className": "graph-area",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "animate": false,
-              "animationDuration": 500,
-              "animationEasing": "ease-out",
-              "className": "graph",
-              "cx": 50,
-              "cy": 50,
-              "data": Array [
-                Object {
-                  "color": "#E38627",
-                  "title": "One",
-                  "value": 1.1,
-                },
-                Object {
-                  "color": "#C13C37",
-                  "title": "Two",
-                  "value": 1.9,
-                },
-                Object {
-                  "color": "#6A2135",
-                  "title": "Three",
-                  "value": 20,
-                },
-              ],
-              "label": false,
-              "labelPosition": 50,
-              "lengthAngle": 360,
-              "lineWidth": 100,
-              "onClick": undefined,
-              "onMouseOut": undefined,
-              "onMouseOver": undefined,
-              "paddingAngle": 0,
-              "radius": 50,
-              "ratio": 1,
-              "rounded": false,
-              "startAngle": 0,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "button",
-        },
-      ],
-      "type": "div",
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {

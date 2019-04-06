@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import { mapStateToProps } from '../Feedback/Feedback';
-import {hook} from './ShotFeedback'
-import { throwServerError } from 'apollo-link-http-common';
 
-
-class Feedback extends Component {
+export class Feedback extends Component {
   rightFeedback = () => {
     return (
       <div className="right">
@@ -66,28 +62,21 @@ class Feedback extends Component {
     )
   }
 
-
-
   feedbackToDisplay = () => {
     const {lastShot} = this.props
     switch(lastShot) {
       case 0:
         return this.welcome()
-        break
       case 1:
       case 2:
         return this.leftFeedback()
-        break
       case 3:
         return this.greatFeedback()
-        break
       case 4:
       case 5:
         return this.rightFeedback()
-        break
       case 6:
         return this.badFeedback()
-        break
     }
   }
 

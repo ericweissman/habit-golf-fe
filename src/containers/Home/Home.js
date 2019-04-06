@@ -1,22 +1,10 @@
 import React, { Component } from 'react';
 import Ratings from '../Ratings/Ratings'
 import swing from '../../images/swing.svg'
-import { Query } from 'react-apollo'
-import gql from "graphql-tag";
 import Feedback from '../Feedback/Feedback'
+import Stats from '../Stats/Stats'
 
-
-const GET_PLAYERS = gql`
-  {
-    players {
-      id
-      name
-    }
-  }
-`;
-
-
-class Home extends Component {
+export class Home extends Component {
   state = {
     currClub: 'wedges',
   }
@@ -25,8 +13,6 @@ class Home extends Component {
     const { value } = e.target
     this.props.changeClub(value)
   }
-
-
 
   clubButtons = () => {
     const { club } = this.props
@@ -37,32 +23,17 @@ class Home extends Component {
   }
 
   render() {
-    const {changeFilter} = this.props
+    const { changeFilter } = this.props
     return (
-      // <Query query={GET_PLAYERS}>
-      //   {({ loading, error, data }) => {
-      //     if (loading) return "Loading...";
-      //     if (error) return `Error! ${error.message}`;
-      //     return (
-      //       <select name="player">
-      //         {data.players.map(player => (
-      //           <option key={player.id} value={player.name}>
-      //             {player.name}
-      //           </option>
-      //         ))}
-      //       </select>
-      //     );
-      //   }}
-      // </Query>
-
       <div className="home">
         <div className="club-btns">
           {
             this.clubButtons()
           }
         </div>
-        <Feedback/>
-        <button onClick={() => changeFilter('ratings')} className="take-shot-btn">Press After Your Shot</button>
+        <Feedback />
+        <button onClick={() => changeFilter('ratings')} className="take-shot-btn">track shot</button>
+        <button onClick={() => changeFilter('stats')} className="view-stats">view stats</button>
       </div>
     );
   }

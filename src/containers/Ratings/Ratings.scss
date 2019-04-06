@@ -37,6 +37,9 @@
   button {
     background-color: #c5f7c0;
   }
+  .active-true {
+    filter: saturate(3.5)
+  }
 }
 
 .ok-shot {
@@ -44,11 +47,18 @@
     background-color: #fff884;
     margin: 10px;
   }
+  .active-true {
+    filter: saturate(1.7)
+  }
 }
 
 .bad-shot {
   button {
     background-color: #ff8383;
     margin: 10px;
+  }
+  .active-true {
+    filter: saturate(2.7);
+    color: white;
   }
 }
