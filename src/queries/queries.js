@@ -7,3 +7,16 @@ export const postShotData = (clubId, rating) => ({
     }
   }`
 })
+
+export const getShotData = (id) => ({
+  query: `{
+    playerStats(playerId: ${id}){
+      playerId
+      greatShotPercentage
+      hookPercentage
+      pullPercentage
+      pushPercentage
+      slicePercentage
+    }
+  }`
+})
