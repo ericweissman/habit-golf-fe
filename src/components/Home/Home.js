@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Ratings from '../Ratings/Ratings'
-import swing from '../../images/swing.svg'
-import Feedback from '../Feedback/Feedback'
-import Stats from '../Stats/Stats'
+import Feedback from '../../containers/Feedback/Feedback'
 
 export class Home extends Component {
   state = {
