@@ -4,6 +4,7 @@ import { hasErroredReducer } from './hasErroredReducer'
 import { clubReducer } from './clubReducer'
 import { userReducer } from './userReducer'
 import { lastShotReducer } from './lastShotReducer'
+import { shotDataReducer } from './shotDataReducer'
 
 export const rootReducer = combineReducers({
   isLoading: isLoadingReducer,
@@ -11,4 +12,5 @@ export const rootReducer = combineReducers({
   user: userReducer,
   club: clubReducer,
   lastShot: lastShotReducer,
+  shotData: shotDataReducer,
 })

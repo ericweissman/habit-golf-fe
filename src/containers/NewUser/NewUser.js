@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class NewUser extends Component {
+export class NewUser extends Component {
   state = {
     firstName: '',
     lastName: '',
