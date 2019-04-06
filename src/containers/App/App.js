@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import Login from '../Login/Login'
-import NewUser from '../NewUser/NewUser'
+import Login from '../../components/Login/Login'
 import Ratings from '../Ratings/Ratings'
 import Stats from '../Stats/Stats'
-import Home from '../Home/Home'
+import Home from '../../components/Home/Home'
 import './App.scss';
-import { Query } from 'react-apollo';
-import gql from 'graphql-tag'
 import { connect } from 'react-redux';
 import { setActiveClub } from '../../actions'
 
