@@ -1,38 +1,68 @@
 import React, { Component } from 'react';
 import PieChart from 'react-minimal-pie-chart';
+import { connect } from 'react-redux';
+import { handleData } from '../../thunks/handleData'
+import { getShotData } from '../../queries/queries'
+import { getDataSuccess } from '../../actions'
 
-class Stats extends Component {
+
+export class Stats extends Component {
   state = {
     range: 'today',
   }
 
-  changeRange = (e) => {  
-    const { value } = e.target
-    this.setState({range: value})
+  componentDidMount() {
+    this.props.handleData(getDataSuccess, getShotData(1))
   }
 
+  changeRange = (e) => {
+    const { value } = e.target
+    this.setState({ range: value })
+  }
 
   render() {
+    const { changeFilter } = this.props
+    const { greatShotPercentage, hookPercentage, pullPercentage, pushPercentage, slicePercentage } = this.props.shotData
+    const data = [
+      { title: 'Hook', value: hookPercentage, color: '#fc7770', },
+      { title: 'Pull', value: pullPercentage, color: '#f2fc70' },
+      { title: 'Great', value: greatShotPercentage, color: '#84fc71' },
+      { title: 'Push', value: pushPercentage, color: '#f2fc70' },
+      { title: 'Slice', value: slicePercentage, color: '#fc7770' }]
     return (
-      <div>
+      <div className='stats'>
         <div className="date-btns">
-          <button onClick={this.changeRange} value="today">today</button>
-          <button onClick={this.changeRange} value="all time">all time</button>
+          <button className={'active-' + (this.state.range === 'today')} onClick={this.changeRange} value="today">today</button>
+          <button className={'active-' + (this.state.range === 'all time')} onClick={this.changeRange} value="all time">all time</button>
         </div>
         <div className="graph-area">
           <PieChart
             className="graph"
-            data={[
-              { title: 'One', value: 1.1, color: '#E38627' },
-              { title: 'Two', value: 1.9, color: '#C13C37' },
-              { title: 'Three', value: 20, color: '#6A2135' },
-            ]}
+            data={data}
+            startAngle={180}
+            lengthAngle={180}
+            animate
           />
         </div>
-        <button></button>
+        <div className='stats-breakdown'>
+          <p>hook <span>{hookPercentage}%</span></p>
+          <p>great <span>{greatShotPercentage}%</span></p>
+          <p>slice <span>{slicePercentage}%</span></p>
+          <p>pull <span>{pullPercentage}%</span></p>
+          <p>duff <span>{slicePercentage}%</span></p>
+          <p>push <span>{pushPercentage}%</span></p>
+        </div>
+        <button className="back-btn" onClick={() => changeFilter('home')}>Back</button>
       </div>
     );
   }
 }
 
-export default Stats;
+export const mapStateToProps = (state) => ({
+  shotData: state.shotData
+})
+export const mapDispatchToProps = (dispatch) => ({
+  handleData: (actionToDispatch, query) => dispatch(handleData(actionToDispatch, query))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Stats);
