@@ -1,0 +1,63 @@
+.feedback {
+  background-color: $dark-green;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  p {
+    font-weight: 200;
+    font-size: 18px;
+    width: 200px;
+  }
+  h4 {
+    font-weight: 200;
+    font-size: 25px;
+  }
+}
+
+.motto {
+  p {
+    font-size: 26px;
+  }
+  margin-bottom: 15px;
+}
+
+.left {
+  @extend .welcome;
+  h3 {
+    padding: 15px 0;
+    font-size: 50px;
+    font-weight: 200;
+    color: $masters-yellow;
+  }
+}
+
+.right, .bad, .great {
+  @extend .left;
+}
+
+.tips-btn {
+  width: 150px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 25px;
+  background-color: $masters-green;
+  color: $masters-yellow;
+}

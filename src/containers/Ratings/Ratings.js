@@ -38,7 +38,8 @@ class Ratings extends Component {
 
   handleClick = () => {
     const { currClub, result} = this.state
-    this.props.handleData(setLastShot, postShotData(currClub, result))
+    // this.props.handleData(setLastShot, postShotData(currClub, result))
+    this.props.setLastShot(result)
     this.props.changeFilter('home')
   }
 
@@ -110,7 +111,8 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  handleData: (actionToDispatch, query) => dispatch(handleData(actionToDispatch, query))
+  handleData: (actionToDispatch, query) => dispatch(handleData(actionToDispatch, query)),
+  setLastShot: (shot) => dispatch(setLastShot(shot))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Ratings);

@@ -3,6 +3,7 @@ import Ratings from '../Ratings/Ratings'
 import swing from '../../images/swing.svg'
 import { Query } from 'react-apollo'
 import gql from "graphql-tag";
+import Feedback from '../Feedback/Feedback'
 
 
 const GET_PLAYERS = gql`
@@ -60,7 +61,7 @@ class Home extends Component {
             this.clubButtons()
           }
         </div>
-        <div className="feedback"></div>
+        <Feedback/>
         <button onClick={() => changeFilter('ratings')} className="take-shot-btn">Press After Your Shot</button>
       </div>
     );

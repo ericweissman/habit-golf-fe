@@ -1,9 +1,10 @@
 @import '/variables';
-@import './containers/App/App';
 @import './containers/Login/Login';
 @import './containers/NewUser/NewUser';
 @import './containers/Home/Home';
+@import './containers/App/App';
 @import './containers/Ratings/Ratings';
+@import './containers/Feedback/Feedback';
 @import './containers/Stats/Stats';
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 

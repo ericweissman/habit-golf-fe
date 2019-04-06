@@ -44,9 +44,7 @@ ShallowWrapper {
             woods
           </button>
         </div>,
-        <div
-          className="feedback"
-        />,
+        <Connect(Feedback) />,
         <button
           className="take-shot-btn"
           onClick={[Function]}
@@ -138,13 +136,11 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "feedback",
-        },
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
-        "type": "div",
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -194,9 +190,7 @@ ShallowWrapper {
               woods
             </button>
           </div>,
-          <div
-            className="feedback"
-          />,
+          <Connect(Feedback) />,
           <button
             className="take-shot-btn"
             onClick={[Function]}
@@ -288,13 +282,11 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "feedback",
-          },
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
-          "type": "div",
+          "type": [Function],
         },
         Object {
           "instance": null,
