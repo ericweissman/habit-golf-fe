@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 export class NewUser extends Component {
   state = {
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
     password: '',
     confirmPassword: '',
@@ -15,29 +14,26 @@ export class NewUser extends Component {
   }
 
   render() {
-    const { firstName, lastName, email, password, confirmPassword } = this.state
+    const { name, email, password, confirmPassword } = this.state
     return (
       <form className="new-user-form">
         <label>
-          First Name:
-            <input type="text" name="firstName" value={firstName} onChange={this.handleChange} />
-        </label>
-        <label>
-          Last Name:
-            <input type="text" name="lastName" value={lastName} onChange={this.handleChange} />
+          name:
+            <input required type="text" name="name" value={name} onChange={this.handleChange} />
         </label>
         <label>
           email:
-            <input type="text" name="email" value={email} onChange={this.handleChange} />
+            <input required type="email" name="email" value={email} onChange={this.handleChange} />
         </label>
         <label>
-          Password:
-            <input type="text" name="password" value={password} onChange={this.handleChange} />
+          password:
+            <input required type="password" name="password" value={password} onChange={this.handleChange} />
         </label>
         <label>
-          Confirm Password:
-            <input type="text" name="confirmPassword" value={confirmPassword} onChange={this.handleChange} />
+          confirm Password:
+            <input required type="password" name="confirmPassword" value={confirmPassword} onChange={this.handleChange} />
         </label>
+        <button>register</button>
       </form>
     );
   }
