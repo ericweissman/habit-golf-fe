@@ -1,9 +1,10 @@
-export const postShotData = (clubId, rating) => ({
+export const postShotData = (clubId, rating, id) => ({
   query: `{
-    mutation($clubId: Int!, $rating: Int!) {
-      createShot( clubId: "${clubId}", rating: "${rating}" ) {
+    mutation($clubId: Int!, $rating: Int!, $playerId: Int!) {
+      createShot( clubId: "${clubId}", rating: "${rating}", playerId: "${id}  ) {
         rating
         clubId
+        playerId
     }
   }`
 })
