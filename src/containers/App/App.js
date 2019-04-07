@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SignIn from '../../components/SignIn/SignIn'
 import NewUser from '../../components/NewUser/NewUser'
+import Error from '../../components/Error/Error'
 import Ratings from '../Ratings/Ratings'
 import Stats from '../Stats/Stats'
 import Home from '../../components/Home/Home'
@@ -61,9 +62,13 @@ export class App extends Component {
 
   render() {
     const { user } = this.state
+    const { error } = this.props
     return (
       <div className="App">
         <h1>habit golf</h1>
+        {
+          error && <Error error={error}/>
+        }
         {
           user.length === 0 ? this.loginToDisplay() : this.componentToDisplay()
         }
