@@ -10,6 +10,7 @@
     "react": "^16.8.6",
     "react-apollo": "^2.5.3",
     "react-dom": "^16.8.6",
+    "react-loading": "^2.0.3",
     "react-minimal-pie-chart": "^3.5.0",
     "react-scripts": "2.1.8"
   },
