@@ -1,7 +1,7 @@
 @import '/variables';
-@import './containers/Login/Login';
-@import './containers/NewUser/NewUser';
-@import './containers/Home/Home';
+@import './components/SignIn/SignIn';
+@import './components/NewUser/NewUser';
+@import './components/Home/Home';
 @import './containers/App/App';
 @import './containers/Ratings/Ratings';
 @import './containers/Feedback/Feedback';

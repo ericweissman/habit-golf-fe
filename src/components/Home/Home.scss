@@ -16,6 +16,7 @@
   border: none;
   border-radius: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 
 .club-btns {
@@ -30,6 +31,9 @@
     font-size: 18px;
     font-weight: 200;
     color: white;
+    background-color: $masters-green;
+    border: none;
+    outline: none;
   }
   .club-btn-active {
     color: $masters-yellow;
