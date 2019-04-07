@@ -24,11 +24,11 @@ export class Stats extends Component {
     const { changeFilter } = this.props
     const { greatShotPercentage, hookPercentage, pullPercentage, pushPercentage, slicePercentage } = this.props.shotData
     const data = [
-      { title: 'Hook', value: hookPercentage, color: '#fc7770', },
-      { title: 'Pull', value: pullPercentage, color: '#f2fc70' },
-      { title: 'Great', value: greatShotPercentage, color: '#84fc71' },
-      { title: 'Push', value: pushPercentage, color: '#f2fc70' },
-      { title: 'Slice', value: slicePercentage, color: '#fc7770' }]
+      { title: 'Hook', value: hookPercentage, color: '#ca0032', },
+      { title: 'Pull', value: pullPercentage, color: '#FEE715' },
+      { title: 'Great', value: greatShotPercentage, color: '#076652' },
+      { title: 'Push', value: pushPercentage, color: '#FEE715' },
+      { title: 'Slice', value: slicePercentage, color: '#ca0032' }]
     return (
       <div className='stats'>
         <div className="date-btns">

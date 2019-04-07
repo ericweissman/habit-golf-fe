@@ -17,6 +17,7 @@ export const handleData = (actionToDispatch, query) => {
       }
       dispatch(isLoading(false))
       const result = await response.json()
+      //on posting shot, will need to get back the last shot as a result?
       dispatch(actionToDispatch(result))
     } catch (error) {
       dispatch(hasErrored(error.message))

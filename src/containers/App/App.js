@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Login from '../../components/Login/Login'
+import SignIn from '../../components/SignIn/SignIn'
+import NewUser from '../../components/NewUser/NewUser'
 import Ratings from '../Ratings/Ratings'
 import Stats from '../Stats/Stats'
 import Home from '../../components/Home/Home'
@@ -11,10 +12,24 @@ export class App extends Component {
   state = {
     user: [1],
     filter: 'home',
+    newUser: false,
   }
 
   componentDidMount() {
     this.chooseRandomClub()
+  }
+
+  loginToDisplay = () => {
+    const { newUser } = this.state
+    if (!newUser) {
+      return <SignIn newUser={this.toggleNewUser} />
+    } else {
+      return <NewUser />
+    }
+  }
+
+  toggleNewUser = () => {
+    this.setState({ newUser: !this.state.newUser })
   }
 
   chooseRandomClub = () => {
@@ -38,7 +53,7 @@ export class App extends Component {
       case 'ratings':
         return <Ratings changeFilter={this.changeFilter} club={club} random={this.chooseRandomClub} />
       case 'stats':
-        return <Stats changeFilter={this.changeFilter}/>
+        return <Stats changeFilter={this.changeFilter} />
       default:
         return <Home changeFilter={this.changeFilter} club={club} changeClub={this.changeClub} />
     }
@@ -50,7 +65,7 @@ export class App extends Component {
       <div className="App">
         <h1>habit golf</h1>
         {
-          user.length === 0 ? <Login /> : this.componentToDisplay()
+          user.length === 0 ? this.loginToDisplay() : this.componentToDisplay()
         }
       </div>
     );

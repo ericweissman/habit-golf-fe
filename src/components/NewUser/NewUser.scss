@@ -1,9 +1,15 @@
 .new-user-form {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-
+  @extend .sign-in-form;
+  margin-top: 15px;
+  label {
+    padding: 0px 15px;
+  }
+  input {
+    margin-top: 5px;
+  }
   button {
-    width: 75px;
+    @extend .sign-in-btn;
+    height: 50px;
+    margin-bottom: 15px;
   }
 }

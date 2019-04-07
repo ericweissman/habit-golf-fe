@@ -1,5 +1,4 @@
 .feedback {
-  background-color: $dark-green;
   margin: 20px auto;
   width: 250px;
   height: 230px;
@@ -24,6 +23,9 @@
   h4 {
     font-weight: 200;
     font-size: 25px;
+  }
+  img {
+    width: 125px;
   }
 }
 
@@ -60,4 +62,5 @@
   margin-top: 25px;
   background-color: $masters-green;
   color: $masters-yellow;
+  outline: none;
 }

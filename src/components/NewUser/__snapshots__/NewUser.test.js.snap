@@ -20,19 +20,11 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <label>
-          First Name:
+          name:
           <input
-            name="firstName"
+            name="name"
             onChange={[Function]}
-            type="text"
-            value=""
-          />
-        </label>,
-        <label>
-          Last Name:
-          <input
-            name="lastName"
-            onChange={[Function]}
+            required={true}
             type="text"
             value=""
           />
@@ -42,28 +34,34 @@ ShallowWrapper {
           <input
             name="email"
             onChange={[Function]}
-            type="text"
+            required={true}
+            type="email"
             value=""
           />
         </label>,
         <label>
-          Password:
+          password:
           <input
             name="password"
             onChange={[Function]}
-            type="text"
+            required={true}
+            type="password"
             value=""
           />
         </label>,
         <label>
-          Confirm Password:
+          confirm Password:
           <input
             name="confirmPassword"
             onChange={[Function]}
-            type="text"
+            required={true}
+            type="password"
             value=""
           />
         </label>,
+        <button>
+          register
+        </button>,
       ],
       "className": "new-user-form",
     },
@@ -75,10 +73,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "First Name:",
+            "name:",
             <input
-              name="firstName"
+              name="name"
               onChange={[Function]}
+              required={true}
               type="text"
               value=""
             />,
@@ -86,49 +85,15 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "First Name:",
+          "name:",
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "name": "firstName",
+              "name": "name",
               "onChange": [Function],
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-        ],
-        "type": "label",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Last Name:",
-            <input
-              name="lastName"
-              onChange={[Function]}
-              type="text"
-              value=""
-            />,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Last Name:",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "name": "lastName",
-              "onChange": [Function],
+              "required": true,
               "type": "text",
               "value": "",
             },
@@ -149,7 +114,8 @@ ShallowWrapper {
             <input
               name="email"
               onChange={[Function]}
-              type="text"
+              required={true}
+              type="email"
               value=""
             />,
           ],
@@ -164,7 +130,8 @@ ShallowWrapper {
             "props": Object {
               "name": "email",
               "onChange": [Function],
-              "type": "text",
+              "required": true,
+              "type": "email",
               "value": "",
             },
             "ref": null,
@@ -180,18 +147,19 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Password:",
+            "password:",
             <input
               name="password"
               onChange={[Function]}
-              type="text"
+              required={true}
+              type="password"
               value=""
             />,
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Password:",
+          "password:",
           Object {
             "instance": null,
             "key": undefined,
@@ -199,7 +167,8 @@ ShallowWrapper {
             "props": Object {
               "name": "password",
               "onChange": [Function],
-              "type": "text",
+              "required": true,
+              "type": "password",
               "value": "",
             },
             "ref": null,
@@ -215,18 +184,19 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Confirm Password:",
+            "confirm Password:",
             <input
               name="confirmPassword"
               onChange={[Function]}
-              type="text"
+              required={true}
+              type="password"
               value=""
             />,
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Confirm Password:",
+          "confirm Password:",
           Object {
             "instance": null,
             "key": undefined,
@@ -234,7 +204,8 @@ ShallowWrapper {
             "props": Object {
               "name": "confirmPassword",
               "onChange": [Function],
-              "type": "text",
+              "required": true,
+              "type": "password",
               "value": "",
             },
             "ref": null,
@@ -243,6 +214,17 @@ ShallowWrapper {
           },
         ],
         "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "register",
+        },
+        "ref": null,
+        "rendered": "register",
+        "type": "button",
       },
     ],
     "type": "form",
@@ -255,19 +237,11 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <label>
-            First Name:
+            name:
             <input
-              name="firstName"
+              name="name"
               onChange={[Function]}
-              type="text"
-              value=""
-            />
-          </label>,
-          <label>
-            Last Name:
-            <input
-              name="lastName"
-              onChange={[Function]}
+              required={true}
               type="text"
               value=""
             />
@@ -277,28 +251,34 @@ ShallowWrapper {
             <input
               name="email"
               onChange={[Function]}
-              type="text"
+              required={true}
+              type="email"
               value=""
             />
           </label>,
           <label>
-            Password:
+            password:
             <input
               name="password"
               onChange={[Function]}
-              type="text"
+              required={true}
+              type="password"
               value=""
             />
           </label>,
           <label>
-            Confirm Password:
+            confirm Password:
             <input
               name="confirmPassword"
               onChange={[Function]}
-              type="text"
+              required={true}
+              type="password"
               value=""
             />
           </label>,
+          <button>
+            register
+          </button>,
         ],
         "className": "new-user-form",
       },
@@ -310,10 +290,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "First Name:",
+              "name:",
               <input
-                name="firstName"
+                name="name"
                 onChange={[Function]}
+                required={true}
                 type="text"
                 value=""
               />,
@@ -321,49 +302,15 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "First Name:",
+            "name:",
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "name": "firstName",
+                "name": "name",
                 "onChange": [Function],
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-          ],
-          "type": "label",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Last Name:",
-              <input
-                name="lastName"
-                onChange={[Function]}
-                type="text"
-                value=""
-              />,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Last Name:",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "name": "lastName",
-                "onChange": [Function],
+                "required": true,
                 "type": "text",
                 "value": "",
               },
@@ -384,7 +331,8 @@ ShallowWrapper {
               <input
                 name="email"
                 onChange={[Function]}
-                type="text"
+                required={true}
+                type="email"
                 value=""
               />,
             ],
@@ -399,7 +347,8 @@ ShallowWrapper {
               "props": Object {
                 "name": "email",
                 "onChange": [Function],
-                "type": "text",
+                "required": true,
+                "type": "email",
                 "value": "",
               },
               "ref": null,
@@ -415,18 +364,19 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Password:",
+              "password:",
               <input
                 name="password"
                 onChange={[Function]}
-                type="text"
+                required={true}
+                type="password"
                 value=""
               />,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Password:",
+            "password:",
             Object {
               "instance": null,
               "key": undefined,
@@ -434,7 +384,8 @@ ShallowWrapper {
               "props": Object {
                 "name": "password",
                 "onChange": [Function],
-                "type": "text",
+                "required": true,
+                "type": "password",
                 "value": "",
               },
               "ref": null,
@@ -450,18 +401,19 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Confirm Password:",
+              "confirm Password:",
               <input
                 name="confirmPassword"
                 onChange={[Function]}
-                type="text"
+                required={true}
+                type="password"
                 value=""
               />,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Confirm Password:",
+            "confirm Password:",
             Object {
               "instance": null,
               "key": undefined,
@@ -469,7 +421,8 @@ ShallowWrapper {
               "props": Object {
                 "name": "confirmPassword",
                 "onChange": [Function],
-                "type": "text",
+                "required": true,
+                "type": "password",
                 "value": "",
               },
               "ref": null,
@@ -478,6 +431,17 @@ ShallowWrapper {
             },
           ],
           "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "register",
+          },
+          "ref": null,
+          "rendered": "register",
+          "type": "button",
         },
       ],
       "type": "form",

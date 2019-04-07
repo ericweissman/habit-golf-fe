@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import logo1 from '../../images/logo1.svg'
+import swing from '../../images/swing.svg'
 
 export class Feedback extends Component {
   rightFeedback = () => {
@@ -16,7 +18,7 @@ export class Feedback extends Component {
   leftFeedback = () => {
     return (
       <div className="left">
-        <p>your last shot went...</p> 
+        <p>your last shot went...</p>
         <h3>LEFT</h3>
         <p>want a swing tip?</p>
         <button className="tips-btn">get help</button>
@@ -28,14 +30,10 @@ export class Feedback extends Component {
     return (
       <div className="welcome">
         <div className="motto">
-          <p>good habits.</p>
+          <p>better habits.</p>
           <p>better scores.</p>
         </div>
-      <p>perform preshot routine.</p>
-      <p>take your shot.</p>
-      <p>track your progress.</p>
-      <p>play better golf.</p>
-
+        <img src={logo1} alt="habit golf logo"/>
       </div>
     )
   }
@@ -46,8 +44,9 @@ export class Feedback extends Component {
     return (
       <div className="great">
         <h3>{feedback}</h3>
+        <img src={swing} alt="Perfect golf swing"/>
       </div>
-    ) 
+    )
   }
 
   badFeedback = () => {
@@ -63,10 +62,8 @@ export class Feedback extends Component {
   }
 
   feedbackToDisplay = () => {
-    const {lastShot} = this.props
-    switch(lastShot) {
-      case 0:
-        return this.welcome()
+    const { lastShot } = this.props
+    switch (lastShot) {
       case 1:
       case 2:
         return this.leftFeedback()
@@ -77,6 +74,8 @@ export class Feedback extends Component {
         return this.rightFeedback()
       case 6:
         return this.badFeedback()
+      default:
+        return this.welcome()
     }
   }
 
