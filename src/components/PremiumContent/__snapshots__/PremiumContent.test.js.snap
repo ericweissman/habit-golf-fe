@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PremiumContent should correctly match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PremiumContent
+    changeFilter={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="local-pros-area"
+        >
+          <h4>
+            lessons
+          </h4>
+          <p>
+            connect with local pros in your area
+          </p>
+          <button>
+            find a pro
+          </button>
+        </div>,
+        <div
+          className="online-videos"
+        >
+          <h4>
+            premium content
+          </h4>
+          <p>
+            access online tutorials
+          </p>
+          <button>
+            subscribe
+          </button>
+        </div>,
+        <button
+          className="back-to-home"
+          onClick={[Function]}
+        >
+          back
+        </button>,
+      ],
+      "className": "premium-content",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              lessons
+            </h4>,
+            <p>
+              connect with local pros in your area
+            </p>,
+            <button>
+              find a pro
+            </button>,
+          ],
+          "className": "local-pros-area",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "lessons",
+            },
+            "ref": null,
+            "rendered": "lessons",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "connect with local pros in your area",
+            },
+            "ref": null,
+            "rendered": "connect with local pros in your area",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "find a pro",
+            },
+            "ref": null,
+            "rendered": "find a pro",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              premium content
+            </h4>,
+            <p>
+              access online tutorials
+            </p>,
+            <button>
+              subscribe
+            </button>,
+          ],
+          "className": "online-videos",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "premium content",
+            },
+            "ref": null,
+            "rendered": "premium content",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "access online tutorials",
+            },
+            "ref": null,
+            "rendered": "access online tutorials",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "subscribe",
+            },
+            "ref": null,
+            "rendered": "subscribe",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "back",
+          "className": "back-to-home",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "back",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="local-pros-area"
+          >
+            <h4>
+              lessons
+            </h4>
+            <p>
+              connect with local pros in your area
+            </p>
+            <button>
+              find a pro
+            </button>
+          </div>,
+          <div
+            className="online-videos"
+          >
+            <h4>
+              premium content
+            </h4>
+            <p>
+              access online tutorials
+            </p>
+            <button>
+              subscribe
+            </button>
+          </div>,
+          <button
+            className="back-to-home"
+            onClick={[Function]}
+          >
+            back
+          </button>,
+        ],
+        "className": "premium-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                lessons
+              </h4>,
+              <p>
+                connect with local pros in your area
+              </p>,
+              <button>
+                find a pro
+              </button>,
+            ],
+            "className": "local-pros-area",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "lessons",
+              },
+              "ref": null,
+              "rendered": "lessons",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "connect with local pros in your area",
+              },
+              "ref": null,
+              "rendered": "connect with local pros in your area",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "find a pro",
+              },
+              "ref": null,
+              "rendered": "find a pro",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                premium content
+              </h4>,
+              <p>
+                access online tutorials
+              </p>,
+              <button>
+                subscribe
+              </button>,
+            ],
+            "className": "online-videos",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "premium content",
+              },
+              "ref": null,
+              "rendered": "premium content",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "access online tutorials",
+              },
+              "ref": null,
+              "rendered": "access online tutorials",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "subscribe",
+              },
+              "ref": null,
+              "rendered": "subscribe",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "back",
+            "className": "back-to-home",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "back",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

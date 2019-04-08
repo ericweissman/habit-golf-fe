@@ -28,7 +28,7 @@ export class Home extends Component {
             this.clubButtons()
           }
         </div>
-        <Feedback />
+        <Feedback changeFilter={changeFilter}/>
         <button onClick={() => changeFilter('ratings')} className="take-shot-btn">track shot</button>
         <button onClick={() => changeFilter('stats')} className="view-stats">view stats</button>
       </div>
