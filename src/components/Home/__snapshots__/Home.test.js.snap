@@ -48,7 +48,9 @@ ShallowWrapper {
             woods
           </button>
         </div>,
-        <Connect(Feedback) />,
+        <Connect(Feedback)
+          changeFilter={[MockFunction]}
+        />,
         <button
           className="take-shot-btn"
           onClick={[Function]}
@@ -147,7 +149,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "changeFilter": [MockFunction],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -213,7 +217,9 @@ ShallowWrapper {
               woods
             </button>
           </div>,
-          <Connect(Feedback) />,
+          <Connect(Feedback)
+            changeFilter={[MockFunction]}
+          />,
           <button
             className="take-shot-btn"
             onClick={[Function]}
@@ -312,7 +318,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "changeFilter": [MockFunction],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
