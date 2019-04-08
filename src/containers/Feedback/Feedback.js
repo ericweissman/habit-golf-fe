@@ -10,7 +10,7 @@ export class Feedback extends Component {
         <p>your last shot went...</p>
         <h3>RIGHT</h3>
         <p>want a swing tip?</p>
-        <button className="tips-btn">get help</button>
+        <button onClick={() => this.props.changeFilter('paid')}className="tips-btn">get help</button>
       </div>
     )
   }
@@ -21,7 +21,7 @@ export class Feedback extends Component {
         <p>your last shot went...</p>
         <h3>LEFT</h3>
         <p>want a swing tip?</p>
-        <button className="tips-btn">get help</button>
+        <button onClick={() => this.props.changeFilter('paid')}className="tips-btn">get help</button>
       </div>
     )
   }
@@ -56,7 +56,7 @@ export class Feedback extends Component {
       <div className="bad">
         <h3>{feedback}</h3>
         <p>want a swing tip?</p>
-        <button className="tips-btn">unlock tips</button>
+        <button onClick={() => this.props.changeFilter('paid')}className="tips-btn">unlock tips</button>
       </div>
     )
   }

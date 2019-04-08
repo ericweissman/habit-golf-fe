@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { handleData, postData } from '../../thunks/handleData'
+import { handleData } from '../../thunks/handleData'
 import { postShotData } from '../../queries/queries'
-import { setLastShot, getDataSuccess } from '../../actions'
+import { setLastShot } from '../../actions'
 
 export class Ratings extends Component {
   state = {
@@ -23,6 +23,9 @@ export class Ratings extends Component {
         break
       case 'woods':
         currClub = 3
+        break
+      default:
+        currClub = 0
         break
     }
     this.setState({ currClub })

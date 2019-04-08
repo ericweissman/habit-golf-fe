@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SignIn from '../../components/SignIn/SignIn'
 import NewUser from '../../components/NewUser/NewUser'
 import Error from '../../components/Error/Error'
+import PremiumContent from '../../components/PremiumContent/PremiumContent'
 import Ratings from '../Ratings/Ratings'
 import Stats from '../Stats/Stats'
 import Home from '../../components/Home/Home'
@@ -55,6 +56,8 @@ export class App extends Component {
         return <Ratings changeFilter={this.changeFilter} club={club} random={this.chooseRandomClub} />
       case 'stats':
         return <Stats changeFilter={this.changeFilter} />
+      case 'paid':
+        return <PremiumContent changeFilter={this.changeFilter}/>
       default:
         return <Home changeFilter={this.changeFilter} club={club} changeClub={this.changeClub} />
     }
