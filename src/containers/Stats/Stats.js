@@ -111,6 +111,7 @@ export const mapStateToProps = (state) => ({
   shotData: state.shotData,
   isLoading: state.isLoading,
 })
+
 export const mapDispatchToProps = (dispatch) => ({
   handleData: (actionToDispatch, query) => dispatch(handleData(actionToDispatch, query))
 })
