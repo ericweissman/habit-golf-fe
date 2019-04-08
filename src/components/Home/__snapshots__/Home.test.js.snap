@@ -3,7 +3,11 @@
 exports[`Home should correctly match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__unrendered__): <Home
+    changeClub={[MockFunction]}
+    changeFilter={[MockFunction]}
+    club="wedges"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -23,7 +27,7 @@ ShallowWrapper {
           className="club-btns"
         >
           <button
-            className="club-btn"
+            className="club-btn-active"
             onClick={[Function]}
             value="wedges"
           >
@@ -69,7 +73,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <button
-              className="club-btn"
+              className="club-btn-active"
               onClick={[Function]}
               value="wedges"
             >
@@ -100,7 +104,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "wedges",
-              "className": "club-btn",
+              "className": "club-btn-active",
               "onClick": [Function],
               "value": "wedges",
             },
@@ -188,7 +192,7 @@ ShallowWrapper {
             className="club-btns"
           >
             <button
-              className="club-btn"
+              className="club-btn-active"
               onClick={[Function]}
               value="wedges"
             >
@@ -234,7 +238,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <button
-                className="club-btn"
+                className="club-btn-active"
                 onClick={[Function]}
                 value="wedges"
               >
@@ -265,7 +269,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "wedges",
-                "className": "club-btn",
+                "className": "club-btn-active",
                 "onClick": [Function],
                 "value": "wedges",
               },
