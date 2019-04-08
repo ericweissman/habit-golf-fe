@@ -35,10 +35,8 @@ export class Ratings extends Component {
 
   handleClick = () => {
     const { result, currClub } = this.state
-    this.props.setLastShot(result)
     this.props.random()
     this.props.handleData(setLastShot, postShotData(currClub, result, 1))
-    // this.props.setLastShot(result)
     this.props.changeFilter('home')
   }
 
