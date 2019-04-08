@@ -10,8 +10,15 @@ describe('lastShotReducer', () => {
 
   it('should set state with a shot', () => {
     const initialState = 0
+    const shot = { data: {
+      createShot: {
+        rating: 2
+      }
+    }
+
+    }
     const expected = 2
-    const result = lastShotReducer(initialState, actions.setLastShot(2))
+    const result = lastShotReducer(initialState, actions.setLastShot(shot))
     expect(result).toEqual(expected)
   })
 })

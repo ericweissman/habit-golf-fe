@@ -37,8 +37,20 @@
   }
   span {
     font-size: 18px;
-    margin-left: 5px;
+    color: white;
   }
+
+  .ok-shots {
+  color: $masters-yellow
+}
+
+.bad-shots {
+  color: #ed7161;
+}
+
+.great-shots {
+  color: #a0efb0
+}
 }
 
 .back-btn {
@@ -47,3 +59,4 @@
   height: 40px;
   margin-top: 15px;
 }
+

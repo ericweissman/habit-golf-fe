@@ -1,7 +1,6 @@
 export const postShotData = (clubId, rating, id) => ({
-  query: `{
-    mutation($clubId: Int!, $rating: Int!, $playerId: Int!) {
-      createShot( clubId: "${clubId}", rating: "${rating}", playerId: "${id}  ) {
+  query: `mutation {
+      createShot( clubId: ${clubId}, rating: ${rating}, playerId: ${id}  ) {
         rating
         clubId
         playerId
@@ -9,7 +8,7 @@ export const postShotData = (clubId, rating, id) => ({
   }`
 })
 
-export const getShotData = (id) => ({
+export const getShotDataAllTime = (id) => ({
   query: `{
     playerStats(playerId: ${id}){
       playerId
@@ -18,6 +17,21 @@ export const getShotData = (id) => ({
       pullPercentage
       pushPercentage
       slicePercentage
+      duffPercentage
+    }
+  }`
+})
+
+export const getShotDataToday = (id) => ({
+  query: `{
+    playerStats(playerId: ${id}){
+      playerId
+      todayGreatShotPercentage
+      todayHookPercentage
+      todayPullPercentage
+      todayPushPercentage
+      todaySlicePercentage
+      todayDuffPercentage
     }
   }`
 })
