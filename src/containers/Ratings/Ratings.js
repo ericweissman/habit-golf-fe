@@ -32,7 +32,7 @@ export class Ratings extends Component {
 
   updateResult = (e) => {
     const { value } = e.target
-    this.setState({ result: value })
+    this.setState({ result: parseInt(value) })
   }
 
   handleClick = () => {

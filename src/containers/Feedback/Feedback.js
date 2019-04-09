@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Loading from '../../components/Loading/Loading'
 import logo1 from '../../images/logo1.svg'
 import swing from '../../images/swing.svg'
 import { generatePraise } from '../../helpers/generatePraise'
@@ -13,7 +14,7 @@ export class Feedback extends Component {
         <p>your last shot went...</p>
         <h3>RIGHT</h3>
         <p>want a swing tip?</p>
-        <button onClick={() => this.props.changeFilter('paid')}className="tips-btn">get help</button>
+        <button onClick={() => this.props.changeFilter('paid')} className="tips-btn">get help</button>
       </div>
     )
   }
@@ -24,7 +25,7 @@ export class Feedback extends Component {
         <p>your last shot went...</p>
         <h3>LEFT</h3>
         <p>want a swing tip?</p>
-        <button onClick={() => this.props.changeFilter('paid')}className="tips-btn">get help</button>
+        <button onClick={() => this.props.changeFilter('paid')} className="tips-btn">get help</button>
       </div>
     )
   }
@@ -36,7 +37,7 @@ export class Feedback extends Component {
           <p>better habits.</p>
           <p>better scores.</p>
         </div>
-        <img src={logo1} alt="habit golf logo"/>
+        <img src={logo1} alt="habit golf logo" />
       </div>
     )
   }
@@ -45,7 +46,7 @@ export class Feedback extends Component {
     return (
       <div className="great">
         <h3>{generatePraise()}</h3>
-        <img src={swing} alt="Perfect golf swing"/>
+        <img src={swing} alt="Perfect golf swing" />
       </div>
     )
   }
@@ -55,7 +56,7 @@ export class Feedback extends Component {
       <div className="bad">
         <h3>{generateDiss()}</h3>
         <p>want a swing tip?</p>
-        <button onClick={() => this.props.changeFilter('paid')}className="tips-btn">unlock tips</button>
+        <button onClick={() => this.props.changeFilter('paid')} className="tips-btn">unlock tips</button>
       </div>
     )
   }
@@ -79,10 +80,11 @@ export class Feedback extends Component {
   }
 
   render() {
+    const { isLoading } = this.props
     return (
       <div className="feedback">
         {
-          this.feedbackToDisplay()
+          isLoading ? <Loading /> : this.feedbackToDisplay()
         }
       </div>
 
@@ -93,6 +95,7 @@ export class Feedback extends Component {
 
 export const mapStateToProps = (state) => ({
   lastShot: state.lastShot,
+  isLoading: state.isLoading,
 })
 
 export default connect(mapStateToProps)(Feedback);

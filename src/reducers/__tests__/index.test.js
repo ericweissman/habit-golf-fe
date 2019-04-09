@@ -11,7 +11,7 @@ describe('rootReducer', () => {
       club: '',
       lastShot: 0,
       shotData: {},
-      isLoading: true,
+      isLoading: false,
       error: '',
     }
 

@@ -49,3 +49,37 @@
   padding: 15px 0;
 }
 
+@media screen and (min-width: 375px) {
+  .premium-content {
+    margin-top: 40px;
+  }
+  
+  .local-pros-area {
+    padding-top: 35px;
+  }
+
+  .online-videos {
+    padding: 35px 0 25px 0;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .premium-content {
+    margin-top: 40px;
+    width: 340px;
+  }
+  
+  .local-pros-area, .online-videos {
+    padding-top: 35px;
+    h4{
+      font-size: 30px;
+    }
+    p {
+      font-size: 26px;
+    }
+  }
+
+  .online-videos {
+    padding: 35px 0 25px 0;
+  }
+}
