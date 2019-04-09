@@ -48,3 +48,19 @@
   height: 40px;
   margin-top: 20px;
 }
+
+@media screen and (min-width: 375px) {
+  .club-btns {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .club-btns {
+    width: 375px;
+    height: 44px;
+    button {
+      font-size: 20px;
+    }
+  }
+} 

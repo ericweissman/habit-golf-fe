@@ -60,3 +60,29 @@
   margin-top: 15px;
 }
 
+@media screen and (min-width: 375px) {
+  .graph {
+    margin: 20px 0;
+  }
+
+  .back-btn {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .stats-breakdown {
+    width: 315px;
+    p {
+      font-size: 32px;
+    }
+  }
+   .graph-area {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     .graph {
+       width: 285px;
+     }
+   }
+}
