@@ -47,6 +47,3 @@ This app also features several opportunities for monetization, including a marke
 **[Lance Taylor](https://github.com/lptaylor)**
 
 **[Nick Lindeberg](https://github.com/NickLindeberg)**
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
