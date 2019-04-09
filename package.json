@@ -43,7 +43,11 @@
       "!/node_modules/",
       "!src/index.js",
       "!src/setupTests.js",
-      "!src/serviceWorker.js"
+      "!src/serviceWorker.js",
+      "!src/queries/queries.js",
+      "!src/helpers/generateRandomClub.js",
+      "!src/helpers/generatePraise.js",
+      "!src/helpers/generateDiss.js"
     ]
   }
 }
