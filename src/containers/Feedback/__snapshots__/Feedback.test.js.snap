@@ -3,7 +3,7 @@
 exports[`Feedback should correctly match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Feedback) />,
+  Symbol(enzyme.__unrendered__): <Feedback />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -16,59 +16,1623 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": <div
+        className="welcome"
+      >
+        <div
+          className="motto"
+        >
+          <p>
+            better habits.
+          </p>
+          <p>
+            better scores.
+          </p>
+        </div>
+        <img
+          alt="habit golf logo"
+          src="logo1.svg"
+        />
+      </div>,
+      "className": "feedback",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="motto"
+          >
+            <p>
+              better habits.
+            </p>
+            <p>
+              better scores.
+            </p>
+          </div>,
+          <img
+            alt="habit golf logo"
+            src="logo1.svg"
+          />,
+        ],
+        "className": "welcome",
       },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                better habits.
+              </p>,
+              <p>
+                better scores.
+              </p>,
+            ],
+            "className": "motto",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "better habits.",
+              },
+              "ref": null,
+              "rendered": "better habits.",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "better scores.",
+              },
+              "ref": null,
+              "rendered": "better scores.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "habit golf logo",
+            "src": "logo1.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+      ],
+      "type": "div",
     },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": <div
+          className="welcome"
+        >
+          <div
+            className="motto"
+          >
+            <p>
+              better habits.
+            </p>
+            <p>
+              better scores.
+            </p>
+          </div>
+          <img
+            alt="habit golf logo"
+            src="logo1.svg"
+          />
+        </div>,
+        "className": "feedback",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="motto"
+            >
+              <p>
+                better habits.
+              </p>
+              <p>
+                better scores.
+              </p>
+            </div>,
+            <img
+              alt="habit golf logo"
+              src="logo1.svg"
+            />,
+          ],
+          "className": "welcome",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  better habits.
+                </p>,
+                <p>
+                  better scores.
+                </p>,
+              ],
+              "className": "motto",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "better habits.",
+                },
+                "ref": null,
+                "rendered": "better habits.",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "better scores.",
+                },
+                "ref": null,
+                "rendered": "better scores.",
+                "type": "p",
+              },
+            ],
+            "type": "div",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "habit golf logo",
+              "src": "logo1.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
         },
       },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Feedback should correctly match the snapshot 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Feedback
+    lastShot={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="left"
+      >
+        <p>
+          your last shot went...
+        </p>
+        <h3>
+          LEFT
+        </h3>
+        <p>
+          want a swing tip?
+        </p>
+        <button
+          className="tips-btn"
+          onClick={[Function]}
+        >
+          get help
+        </button>
+      </div>,
+      "className": "feedback",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            your last shot went...
+          </p>,
+          <h3>
+            LEFT
+          </h3>,
+          <p>
+            want a swing tip?
+          </p>,
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            get help
+          </button>,
+        ],
+        "className": "left",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "your last shot went...",
+          },
+          "ref": null,
+          "rendered": "your last shot went...",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "LEFT",
+          },
+          "ref": null,
+          "rendered": "LEFT",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "want a swing tip?",
+          },
+          "ref": null,
+          "rendered": "want a swing tip?",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "get help",
+            "className": "tips-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "get help",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="left"
+        >
+          <p>
+            your last shot went...
+          </p>
+          <h3>
+            LEFT
+          </h3>
+          <p>
+            want a swing tip?
+          </p>
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            get help
+          </button>
+        </div>,
+        "className": "feedback",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              your last shot went...
+            </p>,
+            <h3>
+              LEFT
+            </h3>,
+            <p>
+              want a swing tip?
+            </p>,
+            <button
+              className="tips-btn"
+              onClick={[Function]}
+            >
+              get help
+            </button>,
+          ],
+          "className": "left",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "your last shot went...",
+            },
+            "ref": null,
+            "rendered": "your last shot went...",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "LEFT",
+            },
+            "ref": null,
+            "rendered": "LEFT",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "want a swing tip?",
+            },
+            "ref": null,
+            "rendered": "want a swing tip?",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "get help",
+              "className": "tips-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "get help",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Feedback should correctly match the snapshot 3`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Feedback
+    lastShot={2}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="left"
+      >
+        <p>
+          your last shot went...
+        </p>
+        <h3>
+          LEFT
+        </h3>
+        <p>
+          want a swing tip?
+        </p>
+        <button
+          className="tips-btn"
+          onClick={[Function]}
+        >
+          get help
+        </button>
+      </div>,
+      "className": "feedback",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            your last shot went...
+          </p>,
+          <h3>
+            LEFT
+          </h3>,
+          <p>
+            want a swing tip?
+          </p>,
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            get help
+          </button>,
+        ],
+        "className": "left",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "your last shot went...",
+          },
+          "ref": null,
+          "rendered": "your last shot went...",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "LEFT",
+          },
+          "ref": null,
+          "rendered": "LEFT",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "want a swing tip?",
+          },
+          "ref": null,
+          "rendered": "want a swing tip?",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "get help",
+            "className": "tips-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "get help",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="left"
+        >
+          <p>
+            your last shot went...
+          </p>
+          <h3>
+            LEFT
+          </h3>
+          <p>
+            want a swing tip?
+          </p>
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            get help
+          </button>
+        </div>,
+        "className": "feedback",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              your last shot went...
+            </p>,
+            <h3>
+              LEFT
+            </h3>,
+            <p>
+              want a swing tip?
+            </p>,
+            <button
+              className="tips-btn"
+              onClick={[Function]}
+            >
+              get help
+            </button>,
+          ],
+          "className": "left",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "your last shot went...",
+            },
+            "ref": null,
+            "rendered": "your last shot went...",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "LEFT",
+            },
+            "ref": null,
+            "rendered": "LEFT",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "want a swing tip?",
+            },
+            "ref": null,
+            "rendered": "want a swing tip?",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "get help",
+              "className": "tips-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "get help",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Feedback should correctly match the snapshot 4`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Feedback
+    lastShot={3}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="great"
+      >
+        <h3>
+          wow
+        </h3>
+        <img
+          alt="Perfect golf swing"
+          src="swing.svg"
+        />
+      </div>,
+      "className": "feedback",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            wow
+          </h3>,
+          <img
+            alt="Perfect golf swing"
+            src="swing.svg"
+          />,
+        ],
+        "className": "great",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "wow",
+          },
+          "ref": null,
+          "rendered": "wow",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Perfect golf swing",
+            "src": "swing.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="great"
+        >
+          <h3>
+            wow
+          </h3>
+          <img
+            alt="Perfect golf swing"
+            src="swing.svg"
+          />
+        </div>,
+        "className": "feedback",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              wow
+            </h3>,
+            <img
+              alt="Perfect golf swing"
+              src="swing.svg"
+            />,
+          ],
+          "className": "great",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "wow",
+            },
+            "ref": null,
+            "rendered": "wow",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Perfect golf swing",
+              "src": "swing.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Feedback should correctly match the snapshot 5`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Feedback
+    lastShot={4}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="right"
+      >
+        <p>
+          your last shot went...
+        </p>
+        <h3>
+          RIGHT
+        </h3>
+        <p>
+          want a swing tip?
+        </p>
+        <button
+          className="tips-btn"
+          onClick={[Function]}
+        >
+          get help
+        </button>
+      </div>,
+      "className": "feedback",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            your last shot went...
+          </p>,
+          <h3>
+            RIGHT
+          </h3>,
+          <p>
+            want a swing tip?
+          </p>,
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            get help
+          </button>,
+        ],
+        "className": "right",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "your last shot went...",
+          },
+          "ref": null,
+          "rendered": "your last shot went...",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "RIGHT",
+          },
+          "ref": null,
+          "rendered": "RIGHT",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "want a swing tip?",
+          },
+          "ref": null,
+          "rendered": "want a swing tip?",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "get help",
+            "className": "tips-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "get help",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="right"
+        >
+          <p>
+            your last shot went...
+          </p>
+          <h3>
+            RIGHT
+          </h3>
+          <p>
+            want a swing tip?
+          </p>
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            get help
+          </button>
+        </div>,
+        "className": "feedback",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              your last shot went...
+            </p>,
+            <h3>
+              RIGHT
+            </h3>,
+            <p>
+              want a swing tip?
+            </p>,
+            <button
+              className="tips-btn"
+              onClick={[Function]}
+            >
+              get help
+            </button>,
+          ],
+          "className": "right",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "your last shot went...",
+            },
+            "ref": null,
+            "rendered": "your last shot went...",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "RIGHT",
+            },
+            "ref": null,
+            "rendered": "RIGHT",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "want a swing tip?",
+            },
+            "ref": null,
+            "rendered": "want a swing tip?",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "get help",
+              "className": "tips-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "get help",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Feedback should correctly match the snapshot 6`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Feedback
+    lastShot={5}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="right"
+      >
+        <p>
+          your last shot went...
+        </p>
+        <h3>
+          RIGHT
+        </h3>
+        <p>
+          want a swing tip?
+        </p>
+        <button
+          className="tips-btn"
+          onClick={[Function]}
+        >
+          get help
+        </button>
+      </div>,
+      "className": "feedback",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            your last shot went...
+          </p>,
+          <h3>
+            RIGHT
+          </h3>,
+          <p>
+            want a swing tip?
+          </p>,
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            get help
+          </button>,
+        ],
+        "className": "right",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "your last shot went...",
+          },
+          "ref": null,
+          "rendered": "your last shot went...",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "RIGHT",
+          },
+          "ref": null,
+          "rendered": "RIGHT",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "want a swing tip?",
+          },
+          "ref": null,
+          "rendered": "want a swing tip?",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "get help",
+            "className": "tips-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "get help",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="right"
+        >
+          <p>
+            your last shot went...
+          </p>
+          <h3>
+            RIGHT
+          </h3>
+          <p>
+            want a swing tip?
+          </p>
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            get help
+          </button>
+        </div>,
+        "className": "feedback",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              your last shot went...
+            </p>,
+            <h3>
+              RIGHT
+            </h3>,
+            <p>
+              want a swing tip?
+            </p>,
+            <button
+              className="tips-btn"
+              onClick={[Function]}
+            >
+              get help
+            </button>,
+          ],
+          "className": "right",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "your last shot went...",
+            },
+            "ref": null,
+            "rendered": "your last shot went...",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "RIGHT",
+            },
+            "ref": null,
+            "rendered": "RIGHT",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "want a swing tip?",
+            },
+            "ref": null,
+            "rendered": "want a swing tip?",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "get help",
+              "className": "tips-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "get help",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Feedback should correctly match the snapshot 7`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Feedback
+    lastShot={6}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="bad"
+      >
+        <h3>
+          woof
+        </h3>
+        <p>
+          want a swing tip?
+        </p>
+        <button
+          className="tips-btn"
+          onClick={[Function]}
+        >
+          unlock tips
+        </button>
+      </div>,
+      "className": "feedback",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            woof
+          </h3>,
+          <p>
+            want a swing tip?
+          </p>,
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            unlock tips
+          </button>,
+        ],
+        "className": "bad",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "woof",
+          },
+          "ref": null,
+          "rendered": "woof",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "want a swing tip?",
+          },
+          "ref": null,
+          "rendered": "want a swing tip?",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "unlock tips",
+            "className": "tips-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "unlock tips",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="bad"
+        >
+          <h3>
+            woof
+          </h3>
+          <p>
+            want a swing tip?
+          </p>
+          <button
+            className="tips-btn"
+            onClick={[Function]}
+          >
+            unlock tips
+          </button>
+        </div>,
+        "className": "feedback",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              woof
+            </h3>,
+            <p>
+              want a swing tip?
+            </p>,
+            <button
+              className="tips-btn"
+              onClick={[Function]}
+            >
+              unlock tips
+            </button>,
+          ],
+          "className": "bad",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "woof",
+            },
+            "ref": null,
+            "rendered": "woof",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "want a swing tip?",
+            },
+            "ref": null,
+            "rendered": "want a swing tip?",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "unlock tips",
+              "className": "tips-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "unlock tips",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
