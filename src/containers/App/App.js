@@ -6,6 +6,7 @@ import PremiumContent from '../../components/PremiumContent/PremiumContent'
 import Ratings from '../Ratings/Ratings'
 import Stats from '../Stats/Stats'
 import Home from '../../components/Home/Home'
+import { generateRandomClub } from '../../helpers/generateRandomClub'
 import './App.scss';
 import { connect } from 'react-redux';
 import { setActiveClub } from '../../actions'
@@ -34,9 +35,9 @@ export class App extends Component {
     this.setState({ newUser: !this.state.newUser })
   }
 
+
   chooseRandomClub = () => {
-    const clubs = ['wedges', 'irons', 'woods']
-    const randomClub = clubs[Math.floor(Math.random() * clubs.length)]
+    const randomClub = generateRandomClub()
     this.props.setActiveClub(randomClub)
   }
 
@@ -57,7 +58,7 @@ export class App extends Component {
       case 'stats':
         return <Stats changeFilter={this.changeFilter} />
       case 'paid':
-        return <PremiumContent changeFilter={this.changeFilter}/>
+        return <PremiumContent changeFilter={this.changeFilter} />
       default:
         return <Home changeFilter={this.changeFilter} club={club} changeClub={this.changeClub} />
     }
@@ -70,7 +71,7 @@ export class App extends Component {
       <div className="App">
         <h1>habit golf</h1>
         {
-          error && <Error error={error}/>
+          error && <Error error={error} />
         }
         {
           user.length === 0 ? this.loginToDisplay() : this.componentToDisplay()

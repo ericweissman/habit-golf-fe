@@ -23,16 +23,26 @@ describe('Home', () => {
     expect(wrapper.state()).toEqual(expectedState)
   })
 
-  it.skip('should call changeClub when changeClubs is called', () => {
+  it('should call changeClub when changeClubs is called', () => {
     const mockEvent = {target: {
       value: 'irons'
     }}
     wrapper.instance().changeClubs(mockEvent)
-    expect(wrapper.props().changeClub).toHaveBeenCalled()
+    expect(mockProps.changeClub).toHaveBeenCalled()
   })
   
-  it.skip('should call changeFilter once the track or view stats buttons are clicked', () => {
+  it('should call changeFilter with the correct params once the track or view stats buttons are clicked', () => {
     wrapper.find('.take-shot-btn').simulate('click')
-    expect(wrapper.props().changeFilter).toHaveBeenCalled()
+    expect(mockProps.changeFilter).toHaveBeenCalled()
+  })
+
+  it('should call changeFilter when the take-shot-btn is clicked', () => {
+    wrapper.find('.take-shot-btn').simulate('click')
+    expect(mockProps.changeFilter).toHaveBeenCalledWith('ratings')
+  })
+
+  it('should call changeFilter with the correct params when the view-state is clicked', () => {
+    wrapper.find('.view-stats').simulate('click')
+    expect(mockProps.changeFilter).toHaveBeenCalledWith('stats')
   })
 })

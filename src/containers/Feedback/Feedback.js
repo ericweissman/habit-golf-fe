@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import logo1 from '../../images/logo1.svg'
 import swing from '../../images/swing.svg'
+import { generatePraise } from '../../helpers/generatePraise'
+import { generateDiss } from '../../helpers/generateDiss'
+
 
 export class Feedback extends Component {
   rightFeedback = () => {
@@ -39,22 +42,18 @@ export class Feedback extends Component {
   }
 
   greatFeedback = () => {
-    const praises = ['wow', 'impressive', 'great shot', 'superb', 'excellent', 'bravo']
-    const feedback = praises[Math.floor(Math.random() * praises.length)]
     return (
       <div className="great">
-        <h3>{feedback}</h3>
+        <h3>{generatePraise()}</h3>
         <img src={swing} alt="Perfect golf swing"/>
       </div>
     )
   }
 
   badFeedback = () => {
-    const jabs = ['oof', 'woof', 'yeesh', 'yikes', 'yuck', 'not great', 'oh no', 'sheesh', 'hmmm']
-    const feedback = jabs[Math.floor(Math.random() * jabs.length)]
     return (
       <div className="bad">
-        <h3>{feedback}</h3>
+        <h3>{generateDiss()}</h3>
         <p>want a swing tip?</p>
         <button onClick={() => this.props.changeFilter('paid')}className="tips-btn">unlock tips</button>
       </div>

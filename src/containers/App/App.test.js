@@ -2,8 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme'
 import  { App, mapStateToProps, mapDispatchToProps } from '../App/App';
 import { setActiveClub } from '../../actions'
-import { SignIn } from '../../components/SignIn/SignIn'
-import { NewUser } from '../../components/NewUser/NewUser'
+import * as helper from '../../helpers/generateRandomClub'
+
+helper.generateRandomClub = jest.fn(() => 'irons')
 
 describe('App', () => {
   let wrapper
@@ -11,14 +12,47 @@ describe('App', () => {
     isLoading: false,
     error: '',
     club: 'wedges',
-    setActiveClub: jest.fn()
+    setActiveClub: helper.generateRandomClub
+  }
+  
+  const mockProps2 = {
+    isLoading: false,
+    error: 'ERROR',
+    club: 'wedges',
+    setActiveClub: helper.generateRandomClub
   }
 
-  it.skip('should correctly match the snapshot', () => {
+
+  it('should correctly match the snapshot', () => {
     wrapper = shallow(<App {...mockProps} />)
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('should match the correct snapshot if the filter is Ratings', () => {
+    wrapper.setState({ filter: 'ratings' })
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should match the correct snapshot if the filter is Premium Content', () => {
+    wrapper.setState({ filter: 'paid' })
+    expect(wrapper).toMatchSnapshot()
+  })
+
+
+  it('should correctly match the snapshot if there is no user logged in', () => {
+    wrapper.setState({user: []})
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should correctly match the snapshot if there is a new user', () => {
+    wrapper.setState({newUser: true})
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should match the correct snapshot if there is an Error', () => {
+    wrapper = shallow(<App {...mockProps2}/>)
+    expect(wrapper).toMatchSnapshot()
+  })
 
   it('should have the proper default state', () => {
     wrapper = shallow(<App {...mockProps} />)
