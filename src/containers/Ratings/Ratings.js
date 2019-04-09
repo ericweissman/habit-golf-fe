@@ -6,7 +6,6 @@ import { setLastShot } from '../../actions'
 
 export class Ratings extends Component {
   state = {
-    loading: true,
     result: 0,
     currClub: 0,
   }
@@ -33,7 +32,7 @@ export class Ratings extends Component {
 
   updateResult = (e) => {
     const { value } = e.target
-    this.setState({ result: parseInt(value) })
+    this.setState({ result: value })
   }
 
   handleClick = () => {
@@ -73,7 +72,6 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   handleData: (actionToDispatch, query) => dispatch(handleData(actionToDispatch, query)),
-  postData: (query) => dispatch(handleData(query)),
   setLastShot: (shot) => dispatch(setLastShot(shot))
 })
 
