@@ -65,6 +65,7 @@ ShallowWrapper {
         >
           <button
             className="active-true"
+            disabled={true}
             onClick={[Function]}
             value="today"
           >
@@ -72,6 +73,7 @@ ShallowWrapper {
           </button>
           <button
             className="active-false"
+            disabled={false}
             onClick={[Function]}
             value="all time"
           >
@@ -197,6 +199,7 @@ ShallowWrapper {
           "children": Array [
             <button
               className="active-true"
+              disabled={true}
               onClick={[Function]}
               value="today"
             >
@@ -204,6 +207,7 @@ ShallowWrapper {
             </button>,
             <button
               className="active-false"
+              disabled={false}
               onClick={[Function]}
               value="all time"
             >
@@ -221,6 +225,7 @@ ShallowWrapper {
             "props": Object {
               "children": "today",
               "className": "active-true",
+              "disabled": true,
               "onClick": [Function],
               "value": "today",
             },
@@ -235,6 +240,7 @@ ShallowWrapper {
             "props": Object {
               "children": "all time",
               "className": "active-false",
+              "disabled": false,
               "onClick": [Function],
               "value": "all time",
             },
@@ -819,6 +825,7 @@ ShallowWrapper {
           >
             <button
               className="active-true"
+              disabled={true}
               onClick={[Function]}
               value="today"
             >
@@ -826,6 +833,7 @@ ShallowWrapper {
             </button>
             <button
               className="active-false"
+              disabled={false}
               onClick={[Function]}
               value="all time"
             >
@@ -951,6 +959,7 @@ ShallowWrapper {
             "children": Array [
               <button
                 className="active-true"
+                disabled={true}
                 onClick={[Function]}
                 value="today"
               >
@@ -958,6 +967,7 @@ ShallowWrapper {
               </button>,
               <button
                 className="active-false"
+                disabled={false}
                 onClick={[Function]}
                 value="all time"
               >
@@ -975,6 +985,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "today",
                 "className": "active-true",
+                "disabled": true,
                 "onClick": [Function],
                 "value": "today",
               },
@@ -989,6 +1000,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "all time",
                 "className": "active-false",
+                "disabled": false,
                 "onClick": [Function],
                 "value": "all time",
               },
