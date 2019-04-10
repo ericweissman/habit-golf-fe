@@ -95,8 +95,8 @@ export class Stats extends Component {
       isLoading ? <Loading type="bubbles" /> :
         <div className='stats'>
           <div className="date-btns">
-            <button className={'active-' + (this.state.range === 'today')} onClick={this.changeRange} value="today">today</button>
-            <button className={'active-' + (this.state.range === 'all time')} onClick={this.changeRange} value="all time">all time</button>
+            <button className={'active-' + (this.state.range === 'today')} disabled={range === 'today' ? true : false } onClick={this.changeRange} value="today">today</button>
+            <button className={'active-' + (this.state.range === 'all time')} disabled={range === 'all time' ? true : false} onClick={this.changeRange} value="all time">all time</button>
           </div>
           {
             range === 'today' ? this.displayTodayData() : this.displayAllData()
